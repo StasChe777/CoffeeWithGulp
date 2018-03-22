@@ -14,13 +14,15 @@
 
 .hero-container {
         display: table;
-      
+        margin: 0 auto;
+        padding: 0 0px;
+        height: 100%;
 }
   
 .hero-content {
     display: table-cell;
 position: relative;
-
+z-index: 10;
 text-align: center;
 vertical-align: middle;
 }
