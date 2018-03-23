@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: hue-rotate(0deg) saturate(2); }
+  filter: hue-rotate(0deg) saturate(1.5); }
 
 .hero-container {
   display: table;
