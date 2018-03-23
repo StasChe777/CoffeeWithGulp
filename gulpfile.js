@@ -19,8 +19,9 @@ gulp.task('hello', function() {
 });*/
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
+    .pipe(concat('one.css'))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
         stream: true
