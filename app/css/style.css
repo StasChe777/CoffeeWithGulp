@@ -245,3 +245,19 @@ p.orderLine2 {
     font-family: monaco, Consolas, "Lucida Console", monospace; }
   p.orderLine2 {
     color: white; } }
+
+.briefHistory {
+  width: auto;
+  height: 100vh;
+  background: url(Img/img2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.coffeecup {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: hue-rotate(10deg) saturate(1.5); }
