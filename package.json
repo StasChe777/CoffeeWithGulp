@@ -1,25 +1,14 @@
 {
-  "name": "coffee",
+  "name": "coffeewithgulp",
   "version": "1.0.0",
-  "description": "Coffee shop website",
+  "description": "",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "test"
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "gulp-babel": "^7.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StasChe777/CoffeeWithGulp.git"
-  },
-  "keywords": [
-    "Coffee",
-    "Shop"
-  ],
-  "author": "The Dream Team",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/StasChe777/CoffeeWithGulp/issues"
-  },
-  "homepage": "https://github.com/StasChe777/CoffeeWithGulp#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
@@ -35,5 +24,17 @@
     "gulp-watch": "^5.0.0",
     "jshint": "^2.9.5"
   },
-  "dependencies": {}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StasChe777/CoffeeWithGulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StasChe777/CoffeeWithGulp/issues"
+  },
+  "homepage": "https://github.com/StasChe777/CoffeeWithGulp#readme"
 }

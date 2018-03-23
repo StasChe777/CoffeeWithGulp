@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     gulpIf = require('gulp-if'),
     browserSync = require('browser-sync').create(),
-    cssnano = require('gulp-cssnano');
+    cssnano = require('gulp-cssnano'),
+    babel = require("gulp-babel"),
+    concat=require("gulp-concat")
 gulp.task('hello', function() {
     console.log('hello');
 })
@@ -46,3 +48,14 @@ gulp.task('browserSync', function() {
         },
     })
 })
+
+gulp.task('scripts', function() {
+    return gulp.src('app/js/*.js')
+    .pipe (babel ({
+        presets: ['react']
+    }))
+.pipe(gulpIf('*.js', uglify()))
+.pipe(concat("dist/js/main-min.js"))
+.pipe(gulp.dest('dist/js'));
+
+});
