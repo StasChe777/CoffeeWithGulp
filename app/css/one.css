@@ -1,3 +1,56 @@
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 2.0625rem 1.5rem;
+  transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
+  opacity: .8; }
+  .navicon-button .navicon:before, .navicon-button .navicon:after {
+    transition: 0.25s; }
+  .navicon-button:hover {
+    transition: 0.5s;
+    opacity: 1; }
+    .navicon-button:hover .navicon:before, .navicon-button:hover .navicon:after {
+      transition: 0.25s; }
+    .navicon-button:hover .navicon:before {
+      top: .825rem; }
+    .navicon-button:hover .navicon:after {
+      top: -.825rem; }
+
+.navicon {
+  position: relative;
+  width: 2.5em;
+  height: .3125rem;
+  background: #FFF;
+  transition: 0.5s;
+  border-radius: 2.5rem; }
+  .navicon:before, .navicon:after {
+    display: block;
+    content: "";
+    height: .3125rem;
+    width: 2.5rem;
+    background: #FFF;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s 0.25s;
+    border-radius: 1rem; }
+  .navicon:before {
+    top: .625rem; }
+  .navicon:after {
+    top: -.625rem; }
+
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important; }
+
+.open .navicon:before,
+.open .navicon:after {
+  transition: 0.5s; }
+
+/* Minus */
+.open {
+  transform: scale(0.75); }
 
 .frontPage {
   height: 100vh;
@@ -8,7 +61,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: hue-rotate(0deg) saturate(1.5); }
+  filter: hue-rotate(2deg) saturate(1.9); }
 
 .container {
   display: flex;
@@ -19,6 +72,10 @@
   margin: 0 auto;
   padding: 0 0px;
   height: 100%; }
+
+.lowerPart {
+  display: flex;
+  flex-direction: row; }
 
 #logo {
   font-family: "Brush Script MT", cursive;
@@ -103,12 +160,15 @@ p.orderLine2 {
   background-color: black; }
 
 .briefHistory {
-  width: auto;
   height: 100vh;
-  background: url(Img/img2.jpg);
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: url(Img/img1.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  filter: hue-rotate(15deg) saturate(2); }
 
 .coffeecup {
   position: relative;
@@ -143,7 +203,7 @@ p.orderLine2 {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: -3px;
     line-height: 1;
@@ -218,7 +278,7 @@ p.orderLine2 {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 800;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
     line-height: 1;
     text-shadow: #555 3px 2px 0;
     position: relative; }
