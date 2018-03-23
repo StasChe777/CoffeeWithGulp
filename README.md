@@ -1,2 +1,0 @@
-# CoffeeWithGulp
-GULP
