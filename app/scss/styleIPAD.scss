@@ -138,4 +138,63 @@
      
     }
     
+    .orderImg {
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+     
+    }
+    
+
+    .textBox{
+        padding-top: 9em;
+        position: relative;
+        font-size: 1em;
+        
+        }
+        .textBox > p {
+            color: white;
+            opacity: 0.9;
+            justify-content: left;
+            width: 12em;
+        }
+        
+        .textBox2{
+            padding-top: 9em;
+            position: relative;
+            font-size: 0.6em;    
+        }
+        
+        .textBox2 > p {
+            color: white;
+            opacity: 0.9;
+            justify-content: left;
+            width: 12em;
+        }
+
+        .coffeecup {
+            position: relative;
+            text-align: center;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 20em;
+            width: auto;
+        }
+        
+        .orderImg {
+            position: relative;
+            text-align: center;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 20em;
+            width: auto;
+        }
+        
+        
+
+
 }

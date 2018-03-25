@@ -179,7 +179,39 @@ h2.slogan {
 .divOne {
   height: 10vh;
   width: 30vh;
-  padding: -3em 0em 0em 0em; }
+  padding: 10em 0em 0em 5em; }
+
+.divTwo {
+  height: 10vh;
+  width: 30vh;
+  padding: 0em 0em 0em 50em; }
+
+.textBox {
+  padding-top: 21em;
+  position: relative;
+  font-size: 1.2em; }
+
+.textBox > p {
+  color: white;
+  opacity: 0.9;
+  justify-content: left;
+  width: 30em; }
+
+.textBox2 {
+  padding-top: 18em;
+  position: relative;
+  font-size: 1.2em; }
+
+.textBox2 > p {
+  color: white;
+  opacity: 0.9;
+  justify-content: left;
+  width: 30em; }
+
+.goodlist {
+  color: white;
+  opacity: 0.9;
+  width: 30em; }
 
 .coffeecup {
   position: relative;
@@ -187,10 +219,28 @@ h2.slogan {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: hue-rotate(180deg) saturate(1.5); }
+  height: 20em;
+  width: auto; }
+
+.orderImg {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 20em;
+  width: auto; }
 
 .dropdown-menu {
   background-color: transparent; }
+
+.imgBox {
+  height: 50px;
+  width: 40px; }
+
+.imgBox2 {
+  height: 50px;
+  width: 40px; }
 
 /* SCREEN SIZE FOR IPAD */
 @media only screen and (max-width: 770px) {
@@ -268,7 +318,47 @@ h2.slogan {
     text-align: center;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .orderImg {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .textBox {
+    padding-top: 9em;
+    position: relative;
+    font-size: 1em; }
+  .textBox > p {
+    color: white;
+    opacity: 0.9;
+    justify-content: left;
+    width: 12em; }
+  .textBox2 {
+    padding-top: 9em;
+    position: relative;
+    font-size: 0.6em; }
+  .textBox2 > p {
+    color: white;
+    opacity: 0.9;
+    justify-content: left;
+    width: 12em; }
+  .coffeecup {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20em;
+    width: auto; }
+  .orderImg {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20em;
+    width: auto; } }
 
 /* SCREEN SIZE FOR Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
