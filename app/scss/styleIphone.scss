@@ -1,5 +1,5 @@
 /* SCREEN SIZE FOR Iphone */
-@media only screen and (max-width: 450px )@media only screen 
+@media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)  {
@@ -8,15 +8,9 @@ and (-webkit-device-pixel-ratio : 3)  {
         position: relative;
         text-align: center;
         width: 100%;
-<<<<<<< HEAD
-        margin: auto;
-        
-=======
         background-color: brown;
         background-size: cover;
->>>>>>> 26e5339e01738a9aa66eb6675d4a690f1b6c45b0
-    
-        
+        margin: auto;
     }
     .container {
         display:flex;
@@ -136,4 +130,5 @@ and (-webkit-device-pixel-ratio : 3)  {
         background-repeat: no-repeat;
         
     
+}
 }
