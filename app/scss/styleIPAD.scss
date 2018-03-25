@@ -3,115 +3,139 @@
 @media only screen and (max-width: 770px) {
     
     .frontPage {
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    width: 100%;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+        background: url(Img/FrontPage.jpeg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: hue-rotate(2deg) saturate(1.9);
+    }
+    .container {
+        display:flex;
+        justify-content: flex-end
+    }
+    .hero-container {
+        display: table;
+        margin: 0 auto ;
+        padding: 0 0px;
+        height: 100%;
+        
+    }
+    .topName>p.name {
     
-    background: url(Img/FrontPage.jpeg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(0deg) saturate(1.5);
-}
-.container {
-    display:flex;
-    justify-content: flex-end
-}
-.hero-container {
-    display: table;
-    margin: 0 auto ;
-    padding: 0 0px;
-    height: 100%;
     
-}
-.topName>p.name {
-
-
-}
-
-
-.lowerPart{
- 
-  
-}
-
-#logo {
-    font-family: "Brush Script MT", cursive;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -3px;
-    line-height: 1;
-    text-shadow: #555 3px 2px 0;
-    position: relative;
-  }
-  #logo:after {
-    content:"roastwell";
-    position: absolute;
-    left: 8px;
-    top: 32px;
+    }
+    .empty {
+        margin: 80px;
+    }
+    .lowerPart{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 80px;
     
-  }
-  #logo:after {
-    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-    background-size: 4px 4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: -5;
-    display: block;
-    text-shadow: none;
-  }
-
-.hero-content {
-
-    width: 100%;
-    display: table-cell;
-    position: relative;
-    vertical-align:middle;
+      
+    }
     
-}
-
-
-
-h2.slogan {
-    display: flex;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
-    justify-content: flex-start;
-    font-size: 20px;
-    margin: 50px;
-    color: white;
     
-
-}
-.lowerPart{
-   
-   
-}
-.orderBtn{
-    width: 200px;
-}
-
-p.orderBtn {
-    display: flex;
-    justify-content: center;
-    font-family: "Brush Script MT", cursive;
-    border: solid white;
-    color: white;
-    margin: 10px;
-
-    font-size: 30px;
-}
-
-p.orderLine {
-    color: white;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
-}
-
-p.orderLine2 {
-    color: white;
-}
-}
+    
+    .hero-content {
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    
+    
+    h2.slogan {
+      
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+        
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+        
+    
+    }
+    .lowerPart{
+       
+       
+    }
+    .orderBtn{
+        width: 300px;
+        align-self: center;
+        background-color:transparent;
+        
+    
+    }
+    .orderBtn:hover{
+        background-color:white;
+        opacity: 0.2;
+        
+        
+    }
+    
+    .orderBtn>p {
+        
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+        border: solid white;
+        color: white;
+        margin:5px;
+        padding: 2px;
+        font-size: 50px;
+    }
+    
+    .orderLine>p {
+        color: white;
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+    }
+    
+    
+    .nav1 {
+        background-color: black;
+        opacity: 0.7;
+        border: 50px 5px 0px 5px;
+    }
+    
+    .burg1 {
+        color: white;
+        font-size: 4rem;
+    }
+    
+    
+    
+    
+    
+    .briefHistory{
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+        background: url(Img/img1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: hue-rotate(180deg) saturate(6);
+        
+        
+    }
+    
+    
+    .coffeecup {
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: hue-rotate(180deg) saturate(1.5);
+    }
+    
+    
