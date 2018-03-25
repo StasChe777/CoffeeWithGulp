@@ -37,7 +37,7 @@ gulp.task('useref', function() {
 })
 
 gulp.task('watch', ['browserSync', 'sass', 'useref'], function() {
-    gulp.watch('app/scss/style.scss', ['sass']);
+    gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/index.html', browserSync.reload);
     gulp.watch('app/js/index.js', browserSync.reload); 
 })
