@@ -3,7 +3,7 @@
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
@@ -65,6 +65,69 @@
 .open {
   transform: scale(0.75); }
 
+.clip-text {
+  width: 100%;
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin: 1px;
+  padding: 35px;
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  /* Color fallback */
+  color: #9c1515;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: ''; }
+
+/* Background */
+.clip-text:before {
+  font-family: "Brush Script MT", cursive;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit; }
+
+/* Text Background (black zone) */
+.clip-text:after {
+  font-family: "Brush Script MT", cursive;
+  position: absolute;
+  z-index: -1;
+  top: .125em;
+  right: .125em;
+  bottom: .125em;
+  left: .125em;
+  background: url(Img/img2.jpg); }
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+  background-position: -.65em 0; }
+
+.clip-text--no-textzone:after {
+  content: none; }
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+  background-color: white;
+  font-family: "Brush Script MT", cursive; }
+
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
 .frontPage {
   height: 100vh;
   position: relative;
@@ -87,13 +150,79 @@
   height: 100%; }
 
 .empty {
-  margin: 80px; }
+  margin: 30px; }
 
 .lowerPart {
+  width: auto;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 80px; }
+  text-align: center;
+  background: black;
+  margin: auto; }
+
+.clip-text {
+  width: 100%;
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin: 1px;
+  padding: 35px;
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  /* Color fallback */
+  color: #9c1515;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: ''; }
+
+/* Background */
+.clip-text:before {
+  font-family: "Brush Script MT", cursive;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit; }
+
+/* Text Background (black zone) */
+.clip-text:after {
+  font-family: "Brush Script MT", cursive;
+  position: absolute;
+  z-index: -1;
+  top: .125em;
+  right: .125em;
+  bottom: .125em;
+  left: .125em;
+  background: url(Img/img2.jpg); }
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+  background-position: -.65em 0; }
+
+.clip-text--no-textzone:after {
+  content: none; }
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+  background-color: white;
+  font-family: "Brush Script MT", cursive; }
 
 .hero-content {
   width: 100%;
@@ -111,10 +240,6 @@ h2.slogan {
   width: 300px;
   align-self: center;
   background-color: transparent; }
-
-.orderBtn:hover {
-  background-color: white;
-  opacity: 0.2; }
 
 .orderBtn > p {
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -163,7 +288,6 @@ h2.slogan {
   font-size: 1.2em; }
 
 .textBox > p {
-  color: white;
   opacity: 0.9;
   justify-content: left;
   width: 30em; }
@@ -205,11 +329,6 @@ h2.slogan {
 .dropdown-menu {
   background-color: transparent; }
 
-/* SCREEN SIZE FOR Tablet */
-@media only screen and (min-width: 768) and (max-width: 1024px) {
-  #logo {
-    font-size: 50px; }
-
 .imgBox {
   height: 50px;
   width: 40px; }
@@ -240,11 +359,26 @@ h2.slogan {
   background-repeat: no-repeat;
   filter: hue-rotate(2deg) saturate(1.9); }
 
-/* SCREEN SIZE FOR IPAD */
-@media only screen and (max-width: 770px) {
+.dropdown-menu > li > a {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 20px; }
 
+.loctxt {
+  padding-top: 3em; }
+
+#locationPage * {
+  color: #ffffff;
+  font-family: 'Racing Sans One'; }
+
+#briefHistory * {
+  color: #ffffff; }
+
+/* SCREEN SIZE FOR Tablet */
+@media only screen and (min-width: 768) and (max-width: 1024px) {
+  #logo {
+    font-size: 50px; }
   .frontPage {
-    height: 100vh;
+    height: 65vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -359,12 +493,13 @@ h2.slogan {
     height: 20em;
     width: auto; } }
 
-
+/* SCREEN SIZE FOR Phone */
+/*Mobile in landscape*/
 @media only screen and (max-device-width: 823px) {
   #logo {
     font-size: 51px; }
   .frontPage {
-    height: 100vh;
+    height: 65vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -438,7 +573,7 @@ h2.slogan {
   #logo {
     font-size: 50px; }
   .frontPage {
-    height: 100vh;
+    height: 55vh;
     position: relative;
     text-align: center;
     width: 100%;
