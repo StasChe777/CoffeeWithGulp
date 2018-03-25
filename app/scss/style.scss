@@ -25,16 +25,94 @@
 
 }
 .empty {
-    margin: 80px;
+    margin: 30px;
 }
+
 .lowerPart{
+    width:auto;
+    height: 10vh;
  display: flex;
  flex-direction: column;
  justify-content: center;
- margin: 80px;
+ text-align: center;
+ background: black;
+ margin:auto;
+}
+
+ 
+ .clip-text {
+     width: 100%;
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: 1px;
+    padding: 35px;
+    text-align: center;
+    font-family:"Brush Script MT", cursive;
+    /* Color fallback */
+    color: rgb(156, 21, 21);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    font-family:"Brush Script MT", cursive;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    font-family:"Brush Script MT", cursive;
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background: url(Img/img2.jpg)
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+    background-color: white;
+    font-family:"Brush Script MT", cursive;
+}
 
   
-}
+
 
 
 
@@ -59,10 +137,7 @@ h2.slogan {
     
 
 }
-.lowerPart{
-   
-   
-}
+
 .orderBtn{
     width: 300px;
     align-self: center;
@@ -70,12 +145,7 @@ h2.slogan {
     
 
 }
-.orderBtn:hover{
-    background-color:white;
-    opacity: 0.2;
-    
-    
-}
+
 
 .orderBtn>p {
     
@@ -196,4 +266,30 @@ font-size: 1.2em;
 .imgBox2{
     height: 50px;
     width: 40px;
+}
+
+.menuPage {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+    background: url(Img/img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9);
+}
+
+.locationPage {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+    background: url(Img/location.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9);
 }
