@@ -1,81 +1,3 @@
-<<<<<<< HEAD
-.navicon-button {
-  display: inline-block;
-  position: relative;
-  padding: 2.0625rem 1.5rem;
-  transition: 0.25s;
-  cursor: pointer;
-  user-select: none;
-  opacity: .8; }
-  .navicon-button .navicon:before, .navicon-button .navicon:after {
-    transition: 0.25s; }
-  .navicon-button:hover {
-    transition: 0.5s;
-    opacity: 1; }
-    .navicon-button:hover .navicon:before, .navicon-button:hover .navicon:after {
-      transition: 0.25s; }
-    .navicon-button:hover .navicon:before {
-      top: .825rem; }
-    .navicon-button:hover .navicon:after {
-      top: -.825rem; }
-
-.navicon {
-  position: relative;
-  width: 2.5em;
-  height: .3125rem;
-  background: #FFF;
-  transition: 0.5s;
-  border-radius: 2.5rem; }
-  .navicon:before, .navicon:after {
-    display: block;
-    content: "";
-    height: .3125rem;
-    width: 2.5rem;
-    background: #FFF;
-    position: absolute;
-    z-index: -1;
-    transition: 0.5s 0.25s;
-    border-radius: 1rem; }
-  .navicon:before {
-    top: .625rem; }
-  .navicon:after {
-    top: -.625rem; }
-
-.open:not(.steps) .navicon:before,
-.open:not(.steps) .navicon:after {
-  top: 0 !important; }
-
-.open .navicon:before,
-.open .navicon:after {
-  transition: 0.5s; }
-
-/* Minus */
-.open {
-  transform: scale(0.75); }
-
-.frontPage {
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  background: url(Img/FrontPage.jpeg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: hue-rotate(0deg) saturate(1.5); }
-
-.container {
-  display: flex;
-  justify-content: flex-end; }
-
-.hero-container {
-  display: table;
-  margin: 0 auto;
-  padding: 0 0px;
-  height: 100%; }
-
-=======
->>>>>>> 92bfc688935f23c195e930561ca7e8e91427f93e
 #logo {
   font-family: "Brush Script MT", cursive;
   color: white;
@@ -104,6 +26,19 @@
   z-index: -5;
   display: block;
   text-shadow: none; }
+
+@media only screen and (max-width: 770px) {
+  #logo {
+    font-size: 80px; }
+  #logo:after {
+    content: "roastwell";
+    position: absolute;
+    left: 11px;
+    top: 20px; } }
+
+@media only screen and (max-width: 450px) {
+  #logo {
+    font-size: 50px; } }
 
 .navicon-button {
   display: inline-block;
@@ -239,8 +174,7 @@ h2.slogan {
   background: url(Img/img1.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  filter: hue-rotate(180deg) saturate(6); }
+  background-repeat: no-repeat; }
 
 .coffeecup {
   position: relative;
@@ -260,11 +194,12 @@ h2.slogan {
     position: relative;
     text-align: center;
     width: 100%;
+    margin: auto;
     background: url(Img/FrontPage.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(0deg) saturate(1.5); }
+    filter: hue-rotate(2deg) saturate(1.9); }
   .container {
     display: flex;
     justify-content: flex-end; }
@@ -273,132 +208,125 @@ h2.slogan {
     margin: 0 auto;
     padding: 0 0px;
     height: 100%; }
-  #logo {
-    font-family: "Brush Script MT", cursive;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -3px;
-    line-height: 1;
-    text-shadow: #555 3px 2px 0;
-    position: relative; }
-  #logo:after {
-    content: "roastwell";
-    position: absolute;
-    left: 8px;
-    top: 32px; }
-  #logo:after {
-    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-    background-size: 4px 4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: -5;
-    display: block;
-    text-shadow: none; }
+  .empty {
+    margin: 80px; }
+  .lowerPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px; }
   .hero-content {
     width: 100%;
-    display: table-cell;
-    position: relative;
-    vertical-align: middle; }
-  h2.slogan {
     display: flex;
+    flex-direction: column;
+    text-align: center; }
+  h2.slogan {
     font-family: monaco, Consolas, "Lucida Console", monospace;
-    justify-content: flex-start;
-    font-size: 20px;
-    margin: 50px;
+    font-size: 30px;
+    margin: 10px;
     color: white; }
   .orderBtn {
-    width: 200px; }
-  p.orderBtn {
-    display: flex;
-    justify-content: center;
-    font-family: "Brush Script MT", cursive;
+    width: 300px;
+    align-self: center;
+    background-color: transparent; }
+  .orderBtn:hover {
+    background-color: white;
+    opacity: 0.2; }
+  .orderBtn > p {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
     color: white;
-    margin: 10px;
-    font-size: 30px; }
-  p.orderLine {
+    margin: 5px;
+    padding: 2px;
+    font-size: 50px; }
+  .orderLine > p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace; }
-  p.orderLine2 {
-    color: white; } }
-
-/* SCREEN SIZE FOR Iphone */
-@media only screen and (max-width: 450px) {
-  .frontPage {
+  .nav1 {
+    background-color: black;
+    opacity: 0.7;
+    border: 50px 5px 0px 5px; }
+  .burg1 {
+    color: white;
+    font-size: 4rem; }
+  .briefHistory {
     height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
-    background: url(Img/FrontPage.jpeg);
+    background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(0deg) saturate(1.5); }
+    background-repeat: no-repeat; }
+  .coffeecup {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .frontPage {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    filter: hue-rotate(2deg) saturate(5); }
   .container {
     display: flex;
     justify-content: flex-end; }
-  .hero-container {
-    display: table;
-    margin: 0 auto;
-    padding: 0 0px;
-    height: 100%; }
+  .empty {
+    margin: 80px; }
   .lowerPart {
     display: flex;
-    justify-content: center; }
-  #logo {
-    font-family: "Brush Script MT", cursive;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-shadow: #555 1px 2px 0;
-    position: relative; }
-  #logo:after {
-    content: "roastwell";
-    position: absolute;
-    left: 4px;
-    top: 10px; }
-  #logo:after {
-    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-    background-size: 4px 4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: -5;
-    display: block;
-    text-shadow: none; }
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px; }
   .hero-content {
     width: 100%;
-    display: table-cell;
-    position: relative;
-    vertical-align: middle; }
-  h2.slogan {
     display: flex;
+    flex-direction: column;
+    text-align: center; }
+  h2.slogan {
     font-family: monaco, Consolas, "Lucida Console", monospace;
-    justify-content: flex-start;
-    font-size: 15px;
-    margin: 30px;
+    font-size: 30px;
+    margin: 10px;
     color: white; }
   .orderBtn {
-    width: 300px; }
-  p.orderBtn {
-    display: flex;
-    justify-content: center;
-    font-family: "Brush Script MT", cursive;
+    width: 300px;
+    align-self: center;
+    background-color: transparent; }
+  .orderBtn:hover {
+    background-color: white;
+    opacity: 0.2; }
+  .orderBtn > p {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
     color: white;
-    margin: 10px;
-    font-size: 30px; }
-  p.orderLine {
+    margin: 5px;
+    padding: 2px;
+    font-size: 50px; }
+  .orderLine > p {
     color: white;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
-    font-size: 10px; }
-  p.orderLine2 {
-    color: white; } }
+    font-family: monaco, Consolas, "Lucida Console", monospace; }
+  .nav1 {
+    background-color: black;
+    opacity: 0.7;
+    border: 50px 5px 0px 5px; }
+  .burg1 {
+    color: white;
+    font-size: 4rem; }
+  .briefHistory {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: url(Img/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .coffeecup {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; } }
