@@ -205,11 +205,6 @@ h2.slogan {
 .dropdown-menu {
   background-color: transparent; }
 
-/* SCREEN SIZE FOR Tablet */
-@media only screen and (min-width: 768) and (max-width: 1024px) {
-  #logo {
-    font-size: 50px; }
-
 .imgBox {
   height: 50px;
   width: 40px; }
@@ -218,9 +213,10 @@ h2.slogan {
   height: 50px;
   width: 40px; }
 
-/* SCREEN SIZE FOR IPAD */
-@media only screen and (max-width: 770px) {
-
+/* SCREEN SIZE FOR Tablet */
+@media only screen and (min-width: 768) and (max-width: 1024px) {
+  #logo {
+    font-size: 50px; }
   .frontPage {
     height: 100vh;
     position: relative;
@@ -337,7 +333,8 @@ h2.slogan {
     height: 20em;
     width: auto; } }
 
-
+/* SCREEN SIZE FOR Phone */
+/*Mobile in landscape*/
 @media only screen and (max-device-width: 823px) {
   #logo {
     font-size: 51px; }
