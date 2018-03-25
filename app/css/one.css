@@ -210,7 +210,6 @@ h2.slogan {
   background-repeat: no-repeat;
   height: 20em;
   width: auto;
-  filter: hue-rotate(180deg) saturate(1.5);
   margin-left: 20em;
   text-align: center;
   background-size: cover;
