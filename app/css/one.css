@@ -96,7 +96,6 @@
   justify-content: center;
   text-align: center;
   padding: 1px;
-  background: brown;
   margin: auto; }
 
 .hero-content {
@@ -235,8 +234,11 @@ h2.slogan {
   height: 50px;
   width: 40px; }
 
+.menuPage > h1 {
+  font-size: 50px; }
+
 .menuPage {
-  height: 100vh;
+  height: 10vh;
   position: relative;
   text-align: center;
   width: 100%;
@@ -244,7 +246,8 @@ h2.slogan {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: hue-rotate(2deg) saturate(1.9); }
+  filter: hue-rotate(-30deg) saturate(3);
+  color: white; }
 
 .locationPage {
   height: 100vh;
@@ -260,14 +263,9 @@ h2.slogan {
 table {
   background-color: white; }
 
-th {
-  text-align: center;
-  width: 100%;
-  background: url(Img/location.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: hue-rotate(2deg) saturate(1.9); }
+.checkOut {
+  display: flex;
+  justify-content: flex-end; }
 
 .dropdown-menu > li > a {
   font-family: monaco, Consolas, "Lucida Console", monospace;
