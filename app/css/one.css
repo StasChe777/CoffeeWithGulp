@@ -11,35 +11,6 @@
   position: relative;
   margin: 10px; }
 
-#logo:after {
-  content: "roastwell";
-  position: absolute;
-  left: 8px;
-  top: 32px; }
-
-#logo:after {
-  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none; }
-
-@media only screen and (max-width: 770px) {
-  #logo {
-    font-size: 80px; }
-  #logo:after {
-    content: "roastwell";
-    position: absolute;
-    left: 11px;
-    top: 20px; } }
-
-@media only screen and (max-width: 450px) {
-  #logo {
-    font-size: 50px; } }
-
 .navicon-button {
   display: inline-block;
   position: relative;
@@ -234,6 +205,11 @@ h2.slogan {
 .dropdown-menu {
   background-color: transparent; }
 
+/* SCREEN SIZE FOR Tablet */
+@media only screen and (min-width: 768) and (max-width: 1024px) {
+  #logo {
+    font-size: 50px; }
+
 .imgBox {
   height: 50px;
   width: 40px; }
@@ -266,6 +242,7 @@ h2.slogan {
 
 /* SCREEN SIZE FOR IPAD */
 @media only screen and (max-width: 770px) {
+
   .frontPage {
     height: 100vh;
     position: relative;
@@ -286,7 +263,7 @@ h2.slogan {
     padding: 0 0px;
     height: 100%; }
   .empty {
-    margin: 80px; }
+    margin: 20px; }
   .lowerPart {
     display: flex;
     flex-direction: column;
@@ -382,8 +359,10 @@ h2.slogan {
     height: 20em;
     width: auto; } }
 
-/* SCREEN SIZE FOR Iphone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+@media only screen and (max-device-width: 823px) {
+  #logo {
+    font-size: 51px; }
   .frontPage {
     height: 100vh;
     position: relative;
@@ -401,12 +380,12 @@ h2.slogan {
     padding: 0 0px;
     height: 100%; }
   .empty {
-    margin: 80px; }
+    margin: 40px; }
   .lowerPart {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 80px; }
+    margin: 20px; }
   .hero-content {
     width: 100%;
     display: flex;
@@ -414,27 +393,97 @@ h2.slogan {
     text-align: center; }
   h2.slogan {
     font-family: monaco, Consolas, "Lucida Console", monospace;
-    font-size: 30px;
-    margin: 10px;
+    font-size: 20px;
+    margin: 2px;
     color: white; }
   .orderBtn {
     width: 300px;
     align-self: center;
     background-color: transparent; }
-  .orderBtn:hover {
-    background-color: white;
-    opacity: 0.2; }
   .orderBtn > p {
     font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
     color: white;
     margin: 5px;
     padding: 2px;
-    font-size: 50px; }
+    font-size: 30px; }
   .orderLine > p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace; }
   .nav1 {
+    background-color: black;
+    opacity: 0.7;
+    border: 50px 5px 0px 5px; }
+  .burg1 {
+    color: white;
+    font-size: 4rem; }
+  .briefHistory {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: url(Img/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .coffeecup {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; } }
+
+/*Phone size Portrait Mode*/
+@media only screen and (max-width: 411px) {
+  #logo {
+    font-size: 50px; }
+  .frontPage {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: auto; }
+  .container {
+    display: flex;
+    justify-content: flex-end; }
+  .hero-container {
+    display: table;
+    margin: 0 auto;
+    padding: 0 0px;
+    height: 100%; }
+  .empty {
+    margin: 80px; }
+  .lowerPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px; }
+  .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  h2.slogan {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 15px;
+    margin: 2px;
+    color: white; }
+  .orderBtn {
+    width: 300px;
+    align-self: center;
+    background-color: transparent; }
+  .orderBtn > p {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    border: solid white;
+    color: white;
+    margin: 10px;
+    padding: 2px;
+    font-size: 30px; }
+  .orderLine > p {
+    color: white;
+    font-family: monaco, Consolas, "Lucida Console", monospace; }
+  .nav1 {
+    position: fixed;
     background-color: black;
     opacity: 0.7;
     border: 50px 5px 0px 5px; }
