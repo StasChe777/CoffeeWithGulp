@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
 
 .frontPage {
-    height: 65vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -27,16 +27,13 @@
 
 }
 .empty {
-    margin: 30px;
+    margin: 80px;
 }
-
 .lowerPart{
  display: flex;
  flex-direction: column;
  justify-content: center;
  text-align: center;
-
- margin: 1px;
  padding: 1px;
  background: brown;
  margin:auto;
@@ -152,6 +149,7 @@ background-clip: text;
 
 
 
+
 .hero-content {
 
     width: 100%;
@@ -173,7 +171,10 @@ h2.slogan {
     
 
 }
-
+.lowerPart{
+   
+   
+}
 .orderBtn{
     width: 300px;
     align-self: center;
@@ -181,7 +182,12 @@ h2.slogan {
     
 
 }
-
+.orderBtn:hover{
+    background-color:white;
+    opacity: 0.2;
+    
+    
+}
 
 .orderBtn>p {
     
@@ -215,6 +221,7 @@ h2.slogan {
     position: relative;
     text-align: center;
     width: 100%;
+    
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
@@ -228,7 +235,9 @@ h2.slogan {
 .divOne{
     height: 10vh;
     width: 30vh;
-    padding: 10em 0em 0em 5em;
+    padding: -3em 0em 0em 0em;
+
+   padding: 10em 0em 0em 5em;
    
 }
 
@@ -275,12 +284,28 @@ font-size: 1.2em;
     background-position: center center;
     background-repeat: no-repeat;
     height: 20em;
-    width: auto;
+width: auto;
+    filter: hue-rotate(180deg) saturate(1.5);
     border: 8px dotted brown;
 }
 
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+
 .orderImg {
-   margin-left : 20em;
+
+position: relative;
+text-align: center;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+height: 20em;
+width: auto;
+filter: hue-rotate(180deg) saturate(1.5);
+margin-left : 20em;
     text-align: center;
     background-size: cover;
     background-position: center center;
@@ -292,11 +317,16 @@ font-size: 1.2em;
 
 
 .dropdown-menu {
-    background-color: transparent;
+background-color: transparent;
 }
 
 
 .imgBox{
+height: 50px;
+width: 40px;
+}
+
+.imgBox2{
     height: 50px;
     width: 40px;
 
@@ -304,8 +334,7 @@ font-size: 1.2em;
 
 .imgBox2{
     height: 50px;
-    width: 40px;
-
+    width: 40px;f
 }
 
 .menuPage {
@@ -321,8 +350,23 @@ font-size: 1.2em;
 }
 
 .locationPage {
-    height: 100vh;
-    position: relative;
+height: 100vh;
+position: relative;
+text-align: center;
+width: 100%;
+
+background: url(Img/location.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+filter: hue-rotate(2deg) saturate(1.9);
+}
+
+table {
+    background-color: white;;
+}
+
+th {
     text-align: center;
     width: 100%;
     background: url(Img/location.jpg);
