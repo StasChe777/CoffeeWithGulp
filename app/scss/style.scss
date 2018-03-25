@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
 
 .frontPage {
-    height: 100vh;
+    height: 65vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -31,13 +31,14 @@
 }
 
 .lowerPart{
-    width:auto;
-    height: 10vh;
  display: flex;
  flex-direction: column;
  justify-content: center;
  text-align: center;
- background: black;
+
+ margin: 1px;
+ padding: 1px;
+ background: brown;
  margin:auto;
 }
 
@@ -146,9 +147,8 @@
     background-color: white;
     font-family:"Brush Script MT", cursive;
 }
-
   
-
+}
 
 
 
