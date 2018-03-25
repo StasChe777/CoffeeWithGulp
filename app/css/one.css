@@ -128,7 +128,7 @@
   transform: scale(0.75); }
 
 .frontPage {
-  height: 65vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   width: 100%;
@@ -149,16 +149,13 @@
   height: 100%; }
 
 .empty {
-  margin: 30px; }
+  margin: 80px; }
 
 .lowerPart {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  margin: 1px;
-  padding: 1px;
-  background: brown; }
+  margin: 80px; }
 
 .hero-content {
   width: 100%;
@@ -176,6 +173,10 @@ h2.slogan {
   width: 300px;
   align-self: center;
   background-color: transparent; }
+
+.orderBtn:hover {
+  background-color: white;
+  opacity: 0.2; }
 
 .orderBtn > p {
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -211,39 +212,14 @@ h2.slogan {
 .divOne {
   height: 10vh;
   width: 30vh;
+  padding: -3em 0em 0em 0em;
   padding: 10em 0em 0em 5em; }
 
 .divTwo {
   height: 10vh;
   width: 30vh;
-  padding: 0em 0em 0em 50em; }
-
-.textBox {
-  padding-top: 21em;
-  position: relative;
-  font-size: 1.2em; }
-
-.textBox > p {
-  color: white;
-  opacity: 0.9;
-  justify-content: left;
-  width: 30em; }
-
-.textBox2 {
-  padding-top: 18em;
-  position: relative;
-  font-size: 1.2em; }
-
-.textBox2 > p {
-  color: white;
-  opacity: 0.9;
-  justify-content: left;
-  width: 30em; }
-
-.goodlist {
-  color: white;
-  opacity: 0.9;
-  width: 30em; }
+  padding: 0em 0em 0em 50em;
+  padding: -3em 0em 0em 0em; }
 
 .coffeecup {
   position: relative;
@@ -252,7 +228,11 @@ h2.slogan {
   background-position: center center;
   background-repeat: no-repeat;
   height: 20em;
-  width: auto; }
+  width: auto;
+  filter: hue-rotate(180deg) saturate(1.5); }
+
+.dropdown-menu {
+  background-color: transparent; }
 
 .orderImg {
   position: relative;
@@ -261,7 +241,8 @@ h2.slogan {
   background-position: center center;
   background-repeat: no-repeat;
   height: 20em;
-  width: auto; }
+  width: auto;
+  filter: hue-rotate(180deg) saturate(1.5); }
 
 .dropdown-menu {
   background-color: transparent; }
@@ -275,10 +256,13 @@ h2.slogan {
   width: 40px; }
 
 .menuPage {
-  height: 100vh;
+  height: 10vh;
   position: relative;
   text-align: center;
   width: 100%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
   background: url(Img/img4.jpg);
   background-size: cover;
   background-position: center center;
@@ -296,12 +280,26 @@ h2.slogan {
   background-repeat: no-repeat;
   filter: hue-rotate(2deg) saturate(1.9); }
 
+table {
+  background-color: white; }
+
+th {
+  text-align: center; }
+
+td {
+  text-align: center; }
+
+.checkOut {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end; }
+
 /* SCREEN SIZE FOR Tablet */
 @media only screen and (min-width: 768) and (max-width: 1024px) {
   #logo {
     font-size: 50px; }
   .frontPage {
-    height: 65vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -422,7 +420,7 @@ h2.slogan {
   #logo {
     font-size: 51px; }
   .frontPage {
-    height: 65vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -496,7 +494,7 @@ h2.slogan {
   #logo {
     font-size: 50px; }
   .frontPage {
-    height: 55vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
