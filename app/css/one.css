@@ -174,8 +174,12 @@ h2.slogan {
   background: url(Img/img1.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  filter: hue-rotate(180deg) saturate(6); }
+  background-repeat: no-repeat; }
+
+.divOne {
+  height: 10vh;
+  width: 30vh;
+  padding: -3em 0em 0em 0em; }
 
 .coffeecup {
   position: relative;

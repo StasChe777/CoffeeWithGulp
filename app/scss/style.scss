@@ -122,12 +122,17 @@ h2.slogan {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(180deg) saturate(6);
+   
     
     
 }
 
+.divOne{
+    height: 10vh;
+    width: 30vh;
+    padding: -3em 0em 0em 0em;
 
+}
 .coffeecup {
     position: relative;
     text-align: center;

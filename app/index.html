@@ -16,6 +16,8 @@
     <!--build:css css/main-min.css -->
     <link rel="stylesheet" href="css/one.css">
     <!-- endbuild -->
+    
+    <link rel="icon" href="app/css/Img/favicon.ico">
 </head>
 <body>
 
@@ -32,9 +34,10 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
      
 
-    <li><a class="dropdown-item" href="#">Action</a></li>
-   <li><a class="dropdown-item" href="#">Another action</a></li>
-   <li> <a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="#frontPage">Home</a></li>
+   <li><a class="dropdown-item" href="#briefHistory">Why we are special</a></li>
+   <li> <a class="dropdown-item" href="#">Menu</a></li>
+   <li> <a class="dropdown-item" href="#">Location</a></li>
     
   </div>
 </div>
@@ -44,7 +47,7 @@
         
              
       
-            <div class="frontPage">
+            <div class="frontPage" id="frontPage">
                  
                 <div class="hero-container">
 
@@ -65,23 +68,33 @@
             </div>
 
            
-<div class="briefHistory">
+<div class="briefHistory" id="briefHistory">
 
 
 
 
 <div class="divOne">
-    <img src="Img/roasting-coffee.jpg" class="coffeecup">
+    <div class="imgBox"> 
+    <img src="css/Img/roasting-coffee.jpg" class="coffeecup" width=400px; height=400px>
+    </div>
+<div class="textBox">
+    <p>Some text that we need to think of that will describe how coffee is good because it is roasted by themselves and what a good company they are.</p>
 </div>
 
-    <img src="Img/roasting-coffee.jpg" width: 100px, height: auto, class="coffeecup">
-
-
 </div>
 
+<div class="divTwo">
+    <div class="imgBox2">
+        <img src="css/Img/roasting-coffee.jpg" class="coffeecup" width=400px; height=400px>
+    </div>
+    <div class="textBox2">
+        <p>some text about the process of getting the coffee and not waiting in queue and all that jazz</p>
+    </div>
+    
+    </div>
 
 
- 
+ </div>
     <script src="js/index.js"></script>
     
 </body>
