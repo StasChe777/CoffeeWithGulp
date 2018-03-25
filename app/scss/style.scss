@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+
 .frontPage {
     height: 100vh;
     position: relative;
@@ -32,9 +34,6 @@
  flex-direction: column;
  justify-content: center;
  margin: 80px;
-
-  
-}
 
 
 
@@ -133,7 +132,37 @@ h2.slogan {
     height:10vh;
     width: 30vh;
     padding: 0em 0em 0em 50em;
-    padding: -3em 0em 0em 0em;
+
+}
+.textBox{
+padding-top: 21em;
+position: relative;
+font-size: 1.2em;
+
+}
+.textBox > p {
+
+    opacity: 0.9;
+    justify-content: left;
+    width: 30em;
+}
+
+.textBox2{
+    padding-top: 18em;
+    position: relative;
+    font-size: 1.2em;    
+}
+
+.textBox2 > p {
+    color: white;
+    opacity: 0.9;
+    justify-content: left;
+    width: 30em;
+}
+.goodlist{
+    color: white;
+    opacity: 0.9;
+    width: 30em;
 }
 .coffeecup {
     position: relative;
@@ -180,19 +209,15 @@ width: 40px;
 }
 
 .menuPage {
-height: 10vh;
-position: relative;
-text-align: center;
-width: 100%;
-color: white;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 60px;
-
-background: url(Img/img4.jpg);
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-filter: hue-rotate(2deg) saturate(1.9);
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: url(Img/img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9);
 }
 
 .locationPage {
@@ -214,14 +239,30 @@ table {
 
 th {
     text-align: center;
+    width: 100%;
+    background: url(Img/location.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9);
 }
 
-td {
-    text-align: center;
+.dropdown-menu>li>a{
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 20px;
 }
 
-.checkOut{
-    height: 10vh;
-    display:flex;
-    justify-content: flex-end;
+
+
+
+.loctxt{
+    padding-top: 3em;
 }
+#locationPage * { 
+    color: #ffffff;
+    font-family: 'Racing Sans One';
+ }
+
+ #briefHistory * { 
+    color: #ffffff;
+ }
