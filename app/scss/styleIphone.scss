@@ -1,14 +1,22 @@
 /* SCREEN SIZE FOR Iphone */
-@media only screen and (max-width: 450px ) {
+@media only screen and (max-width: 450px )@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)  {
     .frontPage {
         height: 100vh;
         position: relative;
         text-align: center;
         width: 100%;
+<<<<<<< HEAD
+        margin: auto;
+        
+=======
         background-color: brown;
         background-size: cover;
+>>>>>>> 26e5339e01738a9aa66eb6675d4a690f1b6c45b0
     
-        filter: hue-rotate(2deg) saturate(1.9);
+        
     }
     .container {
         display:flex;
@@ -115,7 +123,6 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        filter: hue-rotate(180deg) saturate(6);
         
         
     }
@@ -127,7 +134,6 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        filter: hue-rotate(180deg) saturate(1.5);
-    }
+        
     
 }

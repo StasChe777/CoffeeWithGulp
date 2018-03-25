@@ -3,7 +3,7 @@
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 150px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
@@ -29,11 +29,16 @@
 
 @media only screen and (max-width: 770px) {
   #logo {
-    font-size: 80px; } }
+    font-size: 80px; }
+  #logo:after {
+    content: "roastwell";
+    position: absolute;
+    left: 11px;
+    top: 20px; } }
 
 @media only screen and (max-width: 450px) {
   #logo {
-    font-size: 40px; } }
+    font-size: 50px; } }
 
 .navicon-button {
   display: inline-block;
@@ -161,11 +166,6 @@ h2.slogan {
   color: white;
   font-size: 4rem; }
 
-.someLolz {
-  height: 100%;
-  width: auto;
-  background-color: black; }
-
 .briefHistory {
   height: 100vh;
   position: relative;
@@ -175,11 +175,14 @@ h2.slogan {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
+<<<<<<< HEAD
+=======
 
 .divOne {
   height: 10vh;
   width: 30vh;
   padding: -3em 0em 0em 0em; }
+>>>>>>> 26e5339e01738a9aa66eb6675d4a690f1b6c45b0
 
 .coffeecup {
   position: relative;
@@ -199,6 +202,7 @@ h2.slogan {
     position: relative;
     text-align: center;
     width: 100%;
+    margin: auto;
     background: url(Img/FrontPage.jpeg);
     background-size: cover;
     background-position: center center;
@@ -261,34 +265,23 @@ h2.slogan {
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(180deg) saturate(6); }
+    background-repeat: no-repeat; }
   .coffeecup {
     position: relative;
     text-align: center;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(180deg) saturate(1.5); } }
+    background-repeat: no-repeat; } }
 
-/* SCREEN SIZE FOR Iphone */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .frontPage {
     height: 100vh;
     position: relative;
     text-align: center;
-    width: 100%;
-    background-color: brown;
-    background-size: cover;
-    filter: hue-rotate(2deg) saturate(1.9); }
+    filter: hue-rotate(2deg) saturate(5); }
   .container {
     display: flex;
     justify-content: flex-end; }
-  .hero-container {
-    display: table;
-    margin: 0 auto;
-    padding: 0 0px;
-    height: 100%; }
   .empty {
     margin: 80px; }
   .lowerPart {
@@ -338,12 +331,10 @@ h2.slogan {
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(180deg) saturate(6); }
+    background-repeat: no-repeat; }
   .coffeecup {
     position: relative;
     text-align: center;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(180deg) saturate(1.5); } }
+    background-repeat: no-repeat; } }
