@@ -65,69 +65,6 @@
 .open {
   transform: scale(0.75); }
 
-.clip-text {
-  width: 100%;
-  font-size: 6em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: 1px;
-  padding: 35px;
-  text-align: center;
-  font-family: "Brush Script MT", cursive;
-  /* Color fallback */
-  color: #9c1515;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: ''; }
-
-/* Background */
-.clip-text:before {
-  font-family: "Brush Script MT", cursive;
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit; }
-
-/* Text Background (black zone) */
-.clip-text:after {
-  font-family: "Brush Script MT", cursive;
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background: url(Img/img2.jpg); }
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-  background-position: -.65em 0; }
-
-.clip-text--no-textzone:after {
-  content: none; }
-
-/* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%; }
-
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-.clip-text_one {
-  background-color: white;
-  font-family: "Brush Script MT", cursive; }
-
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
 .frontPage {
   height: 100vh;
@@ -157,104 +94,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 80px; }
-
   text-align: center;
-  margin: 1px;
   padding: 1px;
   background: brown;
   margin: auto; }
-
-.clip-text {
-  width: 100%;
-  font-size: 6em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: 1px;
-  padding: 35px;
-  text-align: center;
-  font-family: "Brush Script MT", cursive;
-  /* Color fallback */
-  color: #9c1515;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: ''; }
-
-/* Background */
-.clip-text:before {
-  font-family: "Brush Script MT", cursive;
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit; }
-
-/* Text Background (black zone) */
-.clip-text:after {
-  font-family: "Brush Script MT", cursive;
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background: url(Img/img2.jpg); }
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-  background-position: -.65em 0; }
-
-.clip-text--no-textzone:after {
-  content: none; }
-
-/* Background */
-.clip-text:before {
-  font-family: "Brush Script MT", cursive;
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit; }
-
-/* Text Background (black zone) */
-.clip-text:after {
-  font-family: "Brush Script MT", cursive;
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background: url(Img/img2.jpg); }
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-  background-position: -.65em 0; }
-
-.clip-text--no-textzone:after {
-  content: none; }
-
-/* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%; }
-
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-.clip-text_one {
-  background-color: white;
-  font-family: "Brush Script MT", cursive; }
 
 .hero-content {
   width: 100%;
@@ -353,13 +196,21 @@ h2.slogan {
   background-repeat: no-repeat;
   height: 20em;
   width: auto;
-  filter: hue-rotate(180deg) saturate(1.5); }
-
-.dropdown-menu {
-  background-color: transparent; 
+  filter: hue-rotate(180deg) saturate(1.5);
   border: 8px dotted brown; }
 
+.dropdown-menu {
+  background-color: transparent; }
+
 .orderImg {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 20em;
+  width: auto;
+  filter: hue-rotate(180deg) saturate(1.5);
   margin-left: 20em;
   text-align: center;
   background-size: cover;
@@ -367,7 +218,6 @@ h2.slogan {
   background-repeat: no-repeat;
   height: 20em;
   width: auto;
-  filter: hue-rotate(180deg) saturate(1.5); 
   border: 8px dotted brown; }
 
 .dropdown-menu {
@@ -381,14 +231,15 @@ h2.slogan {
   height: 50px;
   width: 40px; }
 
+.imgBox2 {
+  height: 50px;
+  width: 40px; }
+
 .menuPage {
-  height: 10vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   width: 100%;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 60px;
   background: url(Img/img4.jpg);
   background-size: cover;
   background-position: center center;
@@ -410,15 +261,13 @@ table {
   background-color: white; }
 
 th {
-  text-align: center; }
-
-td {
-  text-align: center; }
-
-.checkOut {
-  height: 10vh;
-  display: flex;
-  justify-content: flex-end; }
+  text-align: center;
+  width: 100%;
+  background: url(Img/location.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: hue-rotate(2deg) saturate(1.9); }
 
 .dropdown-menu > li > a {
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -433,7 +282,6 @@ td {
 
 #briefHistory * {
   color: #ffffff; }
-
 
 /* SCREEN SIZE FOR Tablet */
 @media only screen and (min-width: 768) and (max-width: 1024px) {
