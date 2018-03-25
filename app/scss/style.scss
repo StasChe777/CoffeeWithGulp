@@ -25,69 +25,37 @@
 
 
 }
-
+.empty {
+    margin: 80px;
+}
 .lowerPart{
  display: flex;
- flex-direction: row;
+ flex-direction: column;
+ justify-content: center;
+ margin: 80px;
 
   
 }
 
-#logo {
-    font-family: "Brush Script MT", cursive;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 150px;
-    font-weight: 800;
-    letter-spacing: -3px;
-    line-height: 1;
-    text-shadow: #555 3px 2px 0;
-    position: relative;
-  }
-  #logo:after {
-    content:"roastwell";
-    position: absolute;
-    left: 8px;
-    top: 32px;
-    
-  }
-  #logo:after {
-    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-    background-size: 4px 4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: -5;
-    display: block;
-    text-shadow: none;
-  }
+
 
 .hero-content {
 
     width: 100%;
-    display: table-cell;
-    position: relative;
-    vertical-align:middle;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     
 }
 
-h1.name {
- 
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    margin: 130px;
-    font-size: 100px;
 
-}
 
 h2.slogan {
-    display: flex;
+  
     font-family: monaco, Consolas, "Lucida Console", monospace;
-    justify-content: center;
+    
     font-size: 30px;
-    margin: 110px;
+    margin: 10px;
     color: white;
     
 
@@ -98,27 +66,33 @@ h2.slogan {
 }
 .orderBtn{
     width: 300px;
+    align-self: center;
+    background-color:transparent;
+    
+
+}
+.orderBtn:hover{
+    background-color:white;
+    opacity: 0.2;
+    
+    
 }
 
-p.orderBtn {
-    display: flex;
-    justify-content: center;
+.orderBtn>p {
+    
     font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
     color: white;
-    margin: 10px;
-
+    margin:5px;
+    padding: 2px;
     font-size: 50px;
 }
 
-p.orderLine {
+.orderLine>p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 
-p.orderLine2 {
-    color: white;
-}
 
 .nav1 {
     background-color: black;
@@ -131,11 +105,7 @@ p.orderLine2 {
     font-size: 4rem;
 }
 
-.someLolz {
-    height: 100%;
-    width: auto;
-    background-color: black;
-}
+
 
 
 
@@ -149,7 +119,9 @@ p.orderLine2 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(15deg) saturate(2);
+    filter: hue-rotate(180deg) saturate(6);
+    
+    
 }
 
 
@@ -159,6 +131,6 @@ p.orderLine2 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(10deg) saturate(1.5);
+    filter: hue-rotate(180deg) saturate(1.5);
 }
 
