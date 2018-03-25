@@ -57,7 +57,7 @@
     /* Color fallback */
     color: rgb(156, 21, 21);
     -webkit-background-clip: text;
-
+background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -148,7 +148,7 @@
     font-family:"Brush Script MT", cursive;
 }
   
-}
+
 
 
 
@@ -239,7 +239,7 @@ h2.slogan {
 
 }
 .textBox{
-padding-top: 21em;
+ margin-top: 21em;
 position: relative;
 font-size: 1.2em;
 
@@ -252,7 +252,7 @@ font-size: 1.2em;
 }
 
 .textBox2{
-    padding-top: 18em;
+    margin: 18em 0em 0em 15em;
     position: relative;
     font-size: 1.2em;    
 }
@@ -269,23 +269,25 @@ font-size: 1.2em;
     width: 30em;
 }
 .coffeecup {
-    position: relative;
+ margin-left: 10em; 
     text-align: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 20em;
     width: auto;
+    border: 8px dotted brown;
 }
 
 .orderImg {
-    position: relative;
+   margin-left : 20em;
     text-align: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 20em;
     width: auto;
+    border: 8px dotted brown;
 }
 
 
@@ -297,11 +299,13 @@ font-size: 1.2em;
 .imgBox{
     height: 50px;
     width: 40px;
+
 }
 
 .imgBox2{
     height: 50px;
     width: 40px;
+
 }
 
 .menuPage {
@@ -347,3 +351,4 @@ font-size: 1.2em;
  #briefHistory * { 
     color: #ffffff;
  }
+
