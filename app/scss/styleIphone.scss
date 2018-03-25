@@ -30,7 +30,8 @@
 }
 
 .lowerPart{
- 
+ display:flex;
+ justify-content: center;
   
 }
 
@@ -39,18 +40,18 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     line-height: 1;
-    text-shadow: #555 3px 2px 0;
+    text-shadow: #555 1px 2px 0;
     position: relative;
   }
   #logo:after {
     content:"roastwell";
     position: absolute;
-    left: 8px;
-    top: 32px;
+    left: 4px;
+    top: 10px;
     
   }
   #logo:after {
@@ -79,8 +80,8 @@ h2.slogan {
     display: flex;
     font-family: monaco, Consolas, "Lucida Console", monospace;
     justify-content: flex-start;
-    font-size: 20px;
-    margin: 50px;
+    font-size: 15px;
+    margin: 30px;
     color: white;
     
 
@@ -101,12 +102,13 @@ p.orderBtn {
     color: white;
     margin: 10px;
 
-    font-size: 50px;
+    font-size: 30px;
 }
 
 p.orderLine {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 10px;
 }
 
 p.orderLine2 {
