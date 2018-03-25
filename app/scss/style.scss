@@ -35,7 +35,7 @@
  justify-content: center;
  text-align: center;
  padding: 1px;
- background: brown;
+ 
  margin:auto;
 }
 
@@ -53,16 +53,11 @@
 
 
 h2.slogan {
-  
     font-family: monaco, Consolas, "Lucida Console", monospace;
-    
     font-size: 30px;
     margin: 10px;
     color: white;
-    
-
 }
-
 .orderBtn{
     width: 300px;
     align-self: center;
@@ -224,9 +219,11 @@ width: 40px;
     width: 40px;
 
 }
-
+.menuPage>h1{
+    font-size: 50px;
+}
 .menuPage {
-    height: 100vh;
+    height: 10vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -234,7 +231,9 @@ width: 40px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(2deg) saturate(1.9);
+    filter: hue-rotate(-30deg) saturate(3);
+    color: white;
+   
 }
 
 .locationPage {
@@ -255,13 +254,12 @@ table {
 }
 
 th {
-    text-align: center;
-    width: 100%;
-    background: url(Img/location.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(2deg) saturate(1.9);
+    
+}
+
+.checkOut {
+display:flex;
+justify-content: flex-end;
 }
 
 .dropdown-menu>li>a{
