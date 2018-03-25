@@ -175,14 +175,11 @@ h2.slogan {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-<<<<<<< HEAD
-=======
 
 .divOne {
   height: 10vh;
   width: 30vh;
   padding: -3em 0em 0em 0em; }
->>>>>>> 26e5339e01738a9aa66eb6675d4a690f1b6c45b0
 
 .coffeecup {
   position: relative;
@@ -273,15 +270,24 @@ h2.slogan {
     background-position: center center;
     background-repeat: no-repeat; } }
 
+/* SCREEN SIZE FOR Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .frontPage {
     height: 100vh;
     position: relative;
     text-align: center;
-    filter: hue-rotate(2deg) saturate(5); }
+    width: 100%;
+    margin: auto;
+    background-color: brown;
+    background-size: cover; }
   .container {
     display: flex;
     justify-content: flex-end; }
+  .hero-container {
+    display: table;
+    margin: 0 auto;
+    padding: 0 0px;
+    height: 100%; }
   .empty {
     margin: 80px; }
   .lowerPart {
