@@ -196,7 +196,6 @@ h2.slogan {
   background-repeat: no-repeat;
   height: 20em;
   width: auto;
-  filter: hue-rotate(180deg) saturate(1.5);
   border: 8px dotted brown; }
 
 .dropdown-menu {
