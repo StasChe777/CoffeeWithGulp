@@ -1,13 +1,14 @@
 #logo {
-  font-family: "Brush Script MT", cursive;
-  color: white;
+  top: 25px;
+  font-family: 'Rochester', cursive;
+  color: #e55039;
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 120px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
-  text-shadow: #555 3px 2px 0;
+  text-shadow: red 3px 2px 0;
   position: relative;
   margin: 10px; }
 
@@ -72,11 +73,11 @@
   text-align: center;
   width: 100%;
   border-bottom: 5px white solid;
-  background: url(Img/FrontPage.jpeg);
+  background: url(Img/coffeepage.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: hue-rotate(2deg) saturate(1.9); }
+  /*filter: hue-rotate(2deg) saturate(1.9);*/ }
 
 .container {
   display: flex;
@@ -92,10 +93,9 @@
   margin: 80px; }
 
 .lowerPart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 70px;
   text-align: center;
+  align-content: center;
   padding: 1px;
   margin: auto; }
 
@@ -103,34 +103,26 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: auto;
+  align-self: center; }
 
 h2.slogan {
-  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-family: 'Chicle', cursive;
   font-size: 30px;
-  margin: 10px;
-  color: white; }
+  margin: 35px;
+  color: brown; }
 
 .orderBtn {
   width: 300px;
-  align-self: center;
-  background-color: transparent; }
-
-.orderBtn:hover {
-  background-color: white;
-  opacity: 0.2; }
-
-.orderBtn > p {
-  font-family: monaco, Consolas, "Lucida Console", monospace;
-  border: solid white;
-  color: white;
-  margin: 5px;
-  padding: 2px;
-  font-size: 50px; }
+  height: 50px;
+  border: none;
+  padding: 15px; }
 
 .orderLine > p {
-  color: white;
-  font-family: monaco, Consolas, "Lucida Console", monospace; }
+  color: brown;
+  font-family: 'Chicle', cursive;
+  font-size: 150%;
+  font-style: 5px bold; }
 
 .nav1 {
   background-color: black;
@@ -189,26 +181,21 @@ h2.slogan {
   width: 30em; }
 
 .coffeecup {
-  margin-left: 10em;
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 20em;
-  width: auto;
-  border: 8px dotted brown; }
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 10px;
+  margin-left: 50px;
+  height: 280px;
+  width: 300px;
+  filter: hue-rotate(180deg) saturate(1.5); }
 
 .dropdown-menu {
   background-color: transparent; }
 
 .orderImg {
   position: relative;
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 20em;
-  width: auto;
+  height: 80em;
+  width: 80em;
   margin-left: 20em;
   text-align: center;
   background-size: cover;
@@ -402,7 +389,7 @@ table {
 
 /* SCREEN SIZE FOR Phone */
 /*Mobile in landscape*/
-@media only screen and (max-device-width: 823px) {
+@media only screen and (max-device-width: 823px) and (orientation: landscape) {
   #logo {
     font-size: 51px; }
   .frontPage {
@@ -434,21 +421,12 @@ table {
     flex-direction: column;
     text-align: center; }
   h2.slogan {
-    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-family: 'Chicle', cursive;
     font-size: 20px;
     margin: 2px;
     color: white; }
   .orderBtn {
-    width: 300px;
-    align-self: center;
-    background-color: transparent; }
-  .orderBtn > p {
-    font-family: monaco, Consolas, "Lucida Console", monospace;
-    border: solid white;
-    color: white;
-    margin: 5px;
-    padding: 2px;
-    font-size: 30px; }
+    width: 100px; }
   .orderLine > p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace; }

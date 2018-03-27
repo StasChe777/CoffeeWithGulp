@@ -2,7 +2,7 @@
 /*Mobile in landscape*/
   @media only screen 
 
-and (max-device-width : 823px) {
+and (max-device-width : 823px) and (orientation: landscape) {
     #logo {
         font-size: 51px;
     }
@@ -57,37 +57,18 @@ and (max-device-width : 823px) {
     
     h2.slogan {
       
-        font-family: monaco, Consolas, "Lucida Console", monospace;
-        
+        font-family: 'Chicle', cursive;
         font-size: 20px;
         margin: 2px;
         color: white;
         
     
-    }
-    .lowerPart{
-       
-       
-    }
-    .orderBtn{
-        width: 300px;
-        align-self: center;
-        background-color:transparent;
-        
-    
-    }
-    
-    
-    .orderBtn>p {
-        
-        font-family: monaco, Consolas, "Lucida Console", monospace;
-        border: solid white;
-        color: white;
-        margin:5px;
-        padding: 2px;
-        font-size: 30px;
-    }
-    
+    }  
+
+.orderBtn{
+    width: 100px;
+
+}
     .orderLine>p {
         color: white;
         font-family: monaco, Consolas, "Lucida Console", monospace;
