@@ -114,9 +114,22 @@ h2.slogan {
 
 .orderBtn {
   width: 300px;
+<<<<<<< HEAD
   height: 50px;
   border: none;
   padding: 15px; }
+=======
+  align-self: center;
+  background-color: transparent; }
+
+.orderBtn > p {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  border: solid white;
+  color: white;
+  margin: 5px;
+  padding: 2px;
+  font-size: 50px; }
+>>>>>>> a3dc3846445308167d7f9975171ef5106220bd85
 
 .orderLine > p {
   color: brown;
@@ -127,47 +140,37 @@ h2.slogan {
 .nav1 {
   background-color: black;
   opacity: 0.7;
-  border: 50px 5px 0px 5px; }
-
-.burg1 {
-  color: white;
-  font-size: 4rem; }
+  border: 200px 5px 700px 5px; }
 
 .briefHistory {
+  display: flex;
+  flex-direction: row-reverse;
   height: 100vh;
   position: relative;
-  text-align: center;
   width: 100%;
   background: url(Img/img1.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
 
-.divOne {
-  height: 10vh;
-  width: 30vh;
-  padding: -3em 0em 0em 0em;
-  padding: 10em 0em 0em 5em; }
-
-.divTwo {
-  height: 10vh;
-  width: 30vh;
-  padding: 0em 0em 0em 50em; }
+.line {
+  display: flex;
+  border: solid white;
+  height: 800px;
+  width: 0px;
+  order: 2;
+  margin: 50px;
+  border-radius: 5px;
+  opacity: 0.9; }
 
 .textBox {
-  margin-top: 21em;
-  position: relative;
-  font-size: 1.2em; }
+  margin-top: 100px;
+  font-size: 1.5em; }
 
 .textBox > p {
   opacity: 0.9;
   justify-content: left;
   width: 30em; }
-
-.textBox2 {
-  margin: 18em 0em 0em 15em;
-  position: relative;
-  font-size: 1.2em; }
 
 .textBox2 > p {
   color: white;
@@ -178,6 +181,7 @@ h2.slogan {
 .goodlist {
   color: white;
   opacity: 0.9;
+<<<<<<< HEAD
   width: 30em; }
 
 .coffeecup {
@@ -204,6 +208,42 @@ h2.slogan {
   height: 20em;
   width: auto;
   border: 8px dotted brown; }
+=======
+  margin-top: 170px; }
+
+.aboutImg1 {
+  position: absolute;
+  display: none;
+  top: 75px;
+  left: 05px;
+  height: 250px;
+  width: 250px;
+  margin: 5px;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: hue-rotate(10deg) saturate(2);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
+.aboutImg2 {
+  position: absolute;
+  display: none;
+  top: 260px;
+  left: 100px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 10px;
+  margin-left: 40px;
+  height: 250px;
+  width: 250px;
+  filter: hue-rotate(20deg) saturate(10); }
+
+.dropdown-menu {
+  background-color: black;
+  opacity: 0.7; }
+>>>>>>> a3dc3846445308167d7f9975171ef5106220bd85
 
 .dropdown-menu {
   background-color: transparent; }
@@ -235,12 +275,15 @@ h2.slogan {
   filter: hue-rotate(-30deg) saturate(3);
   color: white; }
 
+.container {
+  display: inline; }
+
 .locationPage {
-  height: 100vh;
+  height: 60vh;
   position: relative;
   text-align: center;
   width: 100%;
-  background: url(Img/location.jpg);
+  background-color: rgba(59, 6, 6, 0.788);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -251,7 +294,8 @@ table {
 
 .checkOut {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding: 10px; }
 
 .dropdown-menu > li > a {
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -268,9 +312,10 @@ table {
   color: #ffffff; }
 
 /* SCREEN SIZE FOR Tablet */
-@media only screen and (min-width: 768) and (max-width: 1024px) {
+@media only screen and (min-width: 786px) and (max-width: 1024px) {
   #logo {
-    font-size: 50px; }
+    margin-top: 140px;
+    font-size: 100px; }
   .frontPage {
     height: 100vh;
     position: relative;
@@ -311,9 +356,6 @@ table {
     width: 300px;
     align-self: center;
     background-color: transparent; }
-  .orderBtn:hover {
-    background-color: white;
-    opacity: 0.2; }
   .orderBtn > p {
     font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
@@ -332,60 +374,74 @@ table {
     color: white;
     font-size: 4rem; }
   .briefHistory {
+    display: flex;
+    flex-direction: row-reverse;
     height: 100vh;
     position: relative;
-    text-align: center;
     width: 100%;
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
-  .coffeecup {
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
-  .orderImg {
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
+  .line {
+    display: flex;
+    border: solid white;
+    height: 700px;
+    width: 0px;
+    order: 2;
+    margin: 50px;
+    border-radius: 5px;
+    opacity: 0.9; }
   .textBox {
-    padding-top: 9em;
-    position: relative;
-    font-size: 1em; }
+    margin-top: 100px;
+    font-size: 1.5em; }
   .textBox > p {
-    color: white;
     opacity: 0.9;
     justify-content: left;
-    width: 12em; }
-  .textBox2 {
-    padding-top: 9em;
-    position: relative;
-    font-size: 0.6em; }
+    width: 30em; }
   .textBox2 > p {
     color: white;
     opacity: 0.9;
     justify-content: left;
-    width: 12em; }
-  .coffeecup {
-    position: relative;
+    width: 30em; }
+  .goodlist {
+    color: white;
+    opacity: 0.9;
+    margin-top: 170px; }
+  .aboutImg1 {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 05px;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
     text-align: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 20em;
-    width: auto; }
-  .orderImg {
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 20em;
-    width: auto; } }
+    filter: hue-rotate(10deg) saturate(2);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .aboutImg2 {
+    position: absolute;
+    display: none;
+    top: 260px;
+    left: 100px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 10px;
+    margin-left: 40px;
+    height: 250px;
+    width: 250px;
+    filter: hue-rotate(20deg) saturate(10); }
+  .menuPage {
+    height: 20vh; }
+  .checkOut {
+    height: 10vh; }
+  .location {
+    display: inline-block;
+    height: 100vh; } }
 
 /* SCREEN SIZE FOR Phone */
 /*Mobile in landscape*/
@@ -438,27 +494,85 @@ table {
     color: white;
     font-size: 4rem; }
   .briefHistory {
+    display: flex;
+    flex-direction: row;
     height: 100vh;
     position: relative;
-    text-align: center;
     width: 100%;
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
-  .coffeecup {
-    position: relative;
+  .line {
+    display: none;
+    display: flex;
+    border: solid white;
+    height: 300px;
+    width: 0px;
+    order: 2;
+    margin: 45px;
+    border-radius: 5px;
+    opacity: 0.9; }
+  .textBox {
+    margin-top: 20px;
+    font-size: 13px; }
+  .textBox > p {
+    opacity: 0.9;
+    justify-content: left;
+    width: 30em; }
+  .textBox2 > p {
+    color: white;
+    opacity: 0.9;
+    justify-content: left;
+    width: 30em; }
+  .goodlist {
+    color: white;
+    opacity: 0.9;
+    margin-top: 17px; }
+  .aboutImg1 {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
     text-align: center;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    filter: hue-rotate(10deg) saturate(2);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .aboutImg2 {
+    position: absolute;
+    display: none;
+    top: 140px;
+    left: 90px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 1px;
+    margin-left: 4px;
+    height: 50px;
+    width: 50px;
+    filter: hue-rotate(20deg) saturate(10); }
+  .locationPage {
+    height: 400vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(59, 6, 6, 0.788);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9); } }
 
 /*Phone size Portrait Mode*/
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 415px) {
   #logo {
     font-size: 50px; }
   .frontPage {
-    height: 100vh;
+    height: 110vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -511,17 +625,81 @@ table {
     color: white;
     font-size: 4rem; }
   .briefHistory {
+    display: flex;
+    flex-direction: row-reverse;
     height: 100vh;
     position: relative;
-    text-align: center;
     width: 100%;
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; }
-  .coffeecup {
-    position: relative;
+    background-repeat: no-repeat;
+    flex: display;
+    justify-content: center; }
+  .line {
+    display: flex;
+    border: solid white;
+    height: 500px;
+    width: 0px;
+    order: 2;
+    margin: 30px;
+    border-radius: 5px;
+    opacity: 0.9; }
+  .textBox {
+    flex: display;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px; }
+  h1 {
+    font-size: 25px; }
+  .textBox > p {
+    opacity: 0.9;
+    width: 20em; }
+  .goodlist {
+    color: white;
+    opacity: 0.9;
+    margin-top: 50px; }
+  .aboutImg1 {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 05px;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
     text-align: center;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    filter: hue-rotate(10deg) saturate(2);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .aboutImg2 {
+    position: absolute;
+    display: none;
+    top: 260px;
+    left: 100px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 10px;
+    margin-left: 40px;
+    height: 250px;
+    width: 250px;
+    filter: hue-rotate(20deg) saturate(10); }
+  .locationPage {
+    height: 220vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: #34495e;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(2deg) saturate(1.9); }
+  .loctxt {
+    padding-top: 3em; }
+  #locationPage * {
+    color: #ffffff;
+    font-family: 'Racing Sans One'; }
+  #briefHistory * {
+    color: #ffffff; } }
