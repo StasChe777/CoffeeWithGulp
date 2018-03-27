@@ -1,232 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-      
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-        
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Roast well</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Roast well</title>
 
     <!--build:css css/main-min.css -->
     <link rel="stylesheet" href="css/one.css">
     <!-- endbuild -->
-    
+
     <link rel="icon" href="css/Img/favicon.jpg">
 </head>
+
 <body>
 
 
 
-        <nav class="navbar navbar-default navbar-fixed-top nav1">
-
-           
-                            <a class="navicon-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="navicon"></div>
-                            </a>
-
-                            <div class="dropdown show">
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-     
-
-    <li><a class="dropdown-item" href="#frontPage">Home</a></li>
-   <li><a class="dropdown-item" href="#briefHistory">Why we are special</a></li>
-   <li> <a class="dropdown-item" href="#menuPage">Menu</a></li>
-   <li> <a class="dropdown-item" href="#locationPage">Location</a></li>
-    
-  </div>
-</div>
-
-              
-        </nav>
-        
-             
-      
-            <div class="frontPage" id="frontPage">
-                 
-                <div class="hero-container">
-
-                    <div class="hero-content"> 
-                        
-                       <div class="empty"></div>
-                        <div id="logo">ROAST WELL</div>
-                        <h2 class="slogan">Simply, </br> good  coffee...</h2>
-                       
-                        <div class="row lowerPart">
-                           
-                            <div class="orderBtn"><p>Order Now</p></div>
-                            <div class="orderLine"><p>Your order will be ready within minutes and ready to collect</p></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-           
-<div class="briefHistory" id="briefHistory">
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
 
 
+        <a class="navicon-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="navicon"></div>
+        </a>
 
-<div class="divOne row">
-    <div class="imgBox col-md-4 col-sd-12"> 
-    <img src="css/Img/roasting-coffee.jpg" class="coffeecup">
-    </div>
-    <div class="col-md-4 col-sd-12 middleone"></div>
-<div class="col-md-4 col-sd-12 textBox">
-    <p>We Roast our own coffee beans and we Roast them Well! Freshly roasted coffee prepared for you. Some more text describing how nice and good and good the coffee is and its just a lot of text of house really good the coffe is its good.</p>
-</div>
-
-</div>
-
-<div class="divTwo row">
-    <div class="imgBox2 col-md-4 col-sd-12">
-        <img src="css/Img/mmf.jpg" class="orderImg">
-    </div>
-    <div class="col-md-4 cold-sd-12"></div>
-    <div class="textBox2 col-md-4 col-sd-12">
-        <p>Do not wait in the queue. The Coffee will be made exactly to your arrival. Our super automation system works so well that it does the coffee good and on time! some text about the process of getting the coffee and not waiting in queue and all that jazz
-    <ul class="goodlist">There's even a list to tell you how good that service is!
-        <li>One good reason</li>
-        <li>Second good reason</li>
-        <li>Some hippy bullshit</li>
-        <li>Yes good coffee, yess.</li>
-    </ul>
-    </p>
-    </div>
-    
-    </div>
-
-</div>
- </div>
- <div class="menuPage" id="menuPage">
-     <h1>MENU</h1>
- </div>
-    <table class="table table-dark">
-        <thead class"thead-dark">
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col">Small</th>
-            <th scope="col">Medium</th>
-            <th scope="col">Large</th>
-            <th scope="col">Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td>Espresso</td>
-            <td>£2.50</td>
-            <td>£3.50</td>
-            <td></td>
-            <td class="amount" id="amount"></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>Americano</td>
-            <td>£3.50</td>
-            <td>£4.00</td>
-            <td></td>
-            <td class="amount" id="amount"></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>Latte</td>
-            <td>£4.50</td>
-            <td>£5.50</td>
-            <td>£6.50</td>
-            <td class="amount" id="amount"></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>Capuccino</td>
-            <td>£4.50</td>
-            <td>£5.50</td>
-            <td>£6.50</td>
-            <td class="amount" id="amount"></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>Mocha</td>
-            <td>£4.50</td>
-            <td>£5.00</td>
-            <td>£5.50</td>
-            <td class="amount" id="amount"></td>
-          </tr>
-        </tbody>
-      </table>
-<div class="checkOut">
-      <button type="button" class="btn btn-success">Check-Out</button>
-    </div>
-
- <div class="locationPage" id="locationPage">
-
-    <div class="row loctxt">
-        <div class="col-md-4 col-sd-12">
-            <h1>Location:</h1><br>
-            <p>Do not waste your time in queue, have a artinsanesque well roasted coffee and no time in queue, simply order and pick on of the locations in here. We got a spot in Manchester and East Didssbuureeeyhh</p>
-            </div>
-            <div class="col-md-4 col-sd-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18999.2615377665!2d-2.238937548920527!3d53.47010977945068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2fbcb9bf64d2658!2sPremier+Inn+Manchester+City+Centre+Piccadilly!5e0!3m2!1sen!2suk!4v1521997988223" width="300" height="300" frameborder="0" style="border-radius: 150px" allowfullscreen class="loc1img"></iframe>
-
-            </div>
-            <div class="col-md-4 col-sd-12">
-            <p class="loc1txt">
-            <h3>Manchester:</h3>
-                <br> 
-                14 Manchester road
-                <br>
-                M3 11L
-                <br>
-                Manchester
-                <br>
-                <br>
-                Phone Number: 0113414343
-                Opening times :
-                <ul><li>Mon-Fri: 05:33 - 03:29</li>
-                   <li>Saturday: 00:00-24:00</li>;
-                   <li>Sunday: 06:00 - 23:00</li>
+        <div class="dropdown show">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
 
-                </li></ul>
-            </p>
-            </div>
-                    </div>
-            <div class="row">
-                <div class="col-md-4 col-sd-12"></div>
-                <div class="col-md-4 col-sd-12"><p><h3>Didsbury Location: </h3><br>
-                    Very nice shop in didsbury as well. Very good.
-                    <br> 
-                    11 Didsbury walk
-                    <br>
-                    M23 11L
-                    <br>
-                    East Didsbury
-                    <br>
-                    Phone Number: 011341441
-                    <br>
-                    Opening times :
-                    <ul><li>Mon-Fri: 05:33 - 03:29</li>
-                       <li>Saturday: 00:00-24:00</li>;
-                       <li>Sunday: 06:00 - 23:00</li>
-    
-                </h2></p></div>
-                <div class="col-md-4 col-sd-12 loc2img">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9513.12480714327!2d-2.2358897593186704!3d53.40979692057107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb2f4308baf95%3A0x3145b4d3c6ab6269!2sEast+Didsbury%2C+Manchester+M20+2LX!5e0!3m2!1sen!2suk!4v1521999760464" width="300" height="300" frameborder="0" style="border-radius: 150px" allowfullscreen></iframe>
-                </div> 
+                <li>
+                    <a class="dropdown-item" href="#frontPage">Home</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#briefHistory">Why we are special</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#menuPage">Menu</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#locationPage">Location</a>
+                </li>
 
             </div>
         </div>
-    
- </div>
+
+
+    </nav>
+
+
+
+    <div class="frontPage" id="frontPage">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <div class="empty"></div>
+                <div id="logo">ROAST WELL</div>
+                <h2 class="slogan">Simply, </br> good coffee...</h2>
+
+                <div class="lowerPart">
+
+                    <div class="orderBtn">
+                        <p>Order Now</p>
+                    </div>
+                    <div class="orderLine">
+                        <p>Your order will be ready within minutes and ready to collect</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="briefHistory" id="briefHistory">
+
+
+        <div class="imgBox">
+            <img src="css/Img/roasting-coffee.jpg" class="aboutImg1">
+            <img src="css/Img/mmf.jpg" class="aboutImg2">
+
+        </div>
+
+        <div class="line"></div>
+        <div class="textBox">
+            <h1>Your Favourite Artisan Coffee House</h1>
+            <p>We Roast our own coffee beans and we Roast them Well! Freshly roasted coffee prepared for you. Some more text
+                describing how nice and good and good the coffee is and its just a lot of text of house really good the coffe
+                is its good.</p>
+            <p>Do not wait in the queue. The Coffee will be made exactly to your arrival. Our super automation system works
+                so well that it does the coffee good and on time! some text about the process of getting the coffee and not
+                waiting in queue and all that jazz
+
+                <ul class="goodlist">There's even a list to tell you how good that service is!
+                    <li>One good reason</li>
+                    <li>Second good reason</li>
+                    <li>Some hippy bullshit</li>
+                    <li>Yes good coffee, yess.</li>
+                </ul>
+            </p>
+
+        </div>
+    </div>
+
+
+    </div>
+    <div class="menuPage" id="menuPage">
+        <h1>MENU</h1>
+    </div>
+  
+        <table class="table table-hover">
+            <thead class "thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">Small</th>
+                    <th scope="col">Medium</th>
+                    <th scope="col">Large</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Espresso</td>
+                    <td>£2.50</td>
+                    <td>£3.50</td>
+                    <td></td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Americano</td>
+                    <td>£3.50</td>
+                    <td>£4.00</td>
+                    <td></td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Latte</td>
+                    <td>£4.50</td>
+                    <td>£5.50</td>
+                    <td>£6.50</td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Capuccino</td>
+                    <td>£4.50</td>
+                    <td>£5.50</td>
+                    <td>£6.50</td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Mocha</td>
+                    <td>£4.50</td>
+                    <td>£5.00</td>
+                    <td>£5.50</td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+            </tbody>
+        </table>
+       
+
+    <div class="checkOut">
+            <button type="button" class="btn btn-success">Check-Out</button>
+        </div>
+    <div class="container">
+        <div class="locationPage" id="locationPage">
+
+            <div class="row loctxt">
+                <div class="col-md-4 col-sd-12">
+                    <h1>Location:</h1>
+                    <br>
+                    <p>Do not waste your time in queue, have a artinsanesque well roasted coffee and no time in queue, simply
+                        order and pick on of the locations in here. We got a spot in Manchester and East Didssbuureeeyhh</p>
+                </div>
+                <div class="col-md-4 col-sd-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18999.2615377665!2d-2.238937548920527!3d53.47010977945068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2fbcb9bf64d2658!2sPremier+Inn+Manchester+City+Centre+Piccadilly!5e0!3m2!1sen!2suk!4v1521997988223"
+                        width="300" height="200" frameborder="0" allowfullscreen class="loc1img"></iframe>
+
+                </div>
+                <div class="col-md-4 col-sd-12">
+                    <p class="loc1txt">
+                        <h3>Manchester:</h3>
+                        <br> 14 Manchester road
+                        <br> M3 11L
+                        <br> Manchester
+                        <br>
+                        <br> Phone Number: 0113414343
+                        <ul>
+                            <li>Opening times:</li>
+                            <li>Mon-Fri: 05:33 - 03:29</li>
+                            <li>Saturday: 00:00-24:00</li>;
+                            <li>Sunday: 06:00 - 23:00</li>
+
+
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 col-sd-12"></div>
+                <div class="col-md-4 col-sd-12 loc2img">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9513.12480714327!2d-2.2358897593186704!3d53.40979692057107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb2f4308baf95%3A0x3145b4d3c6ab6269!2sEast+Didsbury%2C+Manchester+M20+2LX!5e0!3m2!1sen!2suk!4v1521999760464"
+                        width="300" height="200" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-4 col-sd-12 didLoc">
+                    <p>
+                        <h3>Didsbury Location: </h3>
+                        <br> Very nice shop in didsbury as well. Very good.
+                        <br> 11 Didsbury walk
+                        <br> M23 11L
+                        <br> East Didsbury
+                        <br> Phone Number: 011341441
+                        <br> Opening times :
+                        <ul>
+                            <li>Mon-Fri: 05:33 - 03:29</li>
+                            <li>Saturday: 00:00-24:00</li>;
+                            <li>Sunday: 06:00 - 23:00</li>
+
+                            </h2>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+   
 
 
     <script src="js/index.js"></script>
-    
+
 </body>
+
 </html>
