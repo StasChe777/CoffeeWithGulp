@@ -202,10 +202,6 @@ h2.slogan {
   height: 250px;
   width: 250px;
   filter: hue-rotate(20deg) saturate(10); }
-  height: 20em;
-  width: auto;
-  border: 8px dotted brown; }
-
 
 .dropdown-menu {
   background-color: black;
