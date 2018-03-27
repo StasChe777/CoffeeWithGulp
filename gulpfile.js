@@ -44,11 +44,10 @@ gulp.task('watch', ['browserSync', 'sass', 'useref'], function() {
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        server: {
-            baseDir: 'app'        
-        },
-    })
-})
+        server: 'app',
+        port: 27017        
+        })
+});
 
 gulp.task('scripts', function() {
     return gulp.src('app/js/*.js')
