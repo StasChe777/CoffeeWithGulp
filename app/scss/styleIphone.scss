@@ -54,8 +54,7 @@ and (max-device-width : 823px) and (orientation: landscape) {
     
     h2.slogan {
       
-        font-family: monaco, Consolas, "Lucida Console", monospace;
-        
+        font-family: 'Chicle', cursive;
         font-size: 20px;
         margin: 2px;
         color: white;
@@ -232,10 +231,10 @@ and (max-device-width : 823px) and (orientation: landscape) {
         height: 100%;
         
     }
-    .topName>p.name {
+    /*.topName>p.name {
     
     
-    }
+    }*/
     .empty {
         margin: 80px;
     }
