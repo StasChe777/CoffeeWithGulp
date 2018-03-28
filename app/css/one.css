@@ -67,13 +67,14 @@
   transform: scale(0.75); }
 
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
+body {
+  background: linear-gradient(to bottom left, #f8b704, #8b6105, #be6a03); }
+
 .frontPage {
   height: 100vh;
   position: relative;
   text-align: center;
   width: 100%;
-  border-bottom: 5px white solid;
-  background: url(Img/coffeepage.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -103,8 +104,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: auto;
-  align-self: center; }
+  text-align: center; }
 
 h2.slogan {
   font-family: 'Chicle', cursive;
@@ -132,8 +132,11 @@ h2.slogan {
   border: 200px 5px 700px 5px; }
 
 .briefHistory {
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 12%, 100% 88%);
+  clip-path: polygon(0% 100%, 0% 0%, 100% 12%, 100% 88%);
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   height: 100vh;
   position: relative;
   width: 100%;
@@ -145,7 +148,7 @@ h2.slogan {
 .line {
   display: flex;
   border: solid white;
-  height: 800px;
+  height: 700px;
   width: 0px;
   order: 2;
   margin: 50px;
@@ -158,13 +161,11 @@ h2.slogan {
 
 .textBox > p {
   opacity: 0.9;
-  justify-content: left;
   width: 30em; }
 
 .textBox2 > p {
   color: white;
   opacity: 0.9;
-  justify-content: left;
   width: 30em; }
 
 .goodlist {
@@ -225,10 +226,7 @@ h2.slogan {
 
 .dropdown-menu {
   background-color: black;
-  opacity: 0.7; }
-
-.dropdown-menu {
-  background-color: transparent; }
+  opacity: 0.9; }
 
 .imgBox {
   height: 50px;
@@ -250,7 +248,6 @@ h2.slogan {
   position: relative;
   text-align: center;
   width: 100%;
-  background: url(Img/img4.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -265,7 +262,6 @@ h2.slogan {
   position: relative;
   text-align: center;
   width: 100%;
-  background-color: rgba(59, 6, 6, 0.788);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -284,14 +280,17 @@ table {
   font-size: 20px; }
 
 .loctxt {
-  padding-top: 3em; }
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column; }
 
 #locationPage * {
   color: #ffffff;
   font-family: 'Racing Sans One'; }
 
 #briefHistory * {
-  color: #ffffff; }
+  color: #ffffff;
+  opacity: 0.9; }
 
 /* SCREEN SIZE FOR Tablet */
 @media only screen and (min-width: 786px) and (max-width: 1024px) {
@@ -348,6 +347,9 @@ table {
   .orderLine > p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace; }
+  .show {
+    background: black;
+    opacity: 0.9; }
   .nav1 {
     background-color: black;
     opacity: 0.7;
@@ -418,9 +420,13 @@ table {
     width: 250px;
     filter: hue-rotate(20deg) saturate(10); }
   .menuPage {
-    height: 20vh; }
+    height: 13vh; }
+  .menuPage > h1 {
+    font-size: 50px; }
   .checkOut {
-    height: 10vh; }
+    height: 10vh;
+    display: flex;
+    justify-content: center; }
   .location {
     display: inline-block;
     height: 100vh; } }

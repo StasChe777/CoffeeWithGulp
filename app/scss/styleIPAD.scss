@@ -70,10 +70,7 @@
         
     
     }
-    .lowerPart{
-       
-       
-    }
+
     .orderBtn{
         width: 300px;
         align-self: center;
@@ -98,7 +95,11 @@
         font-family: monaco, Consolas, "Lucida Console", monospace;
     }
     
-    
+    .show {
+        background: black;
+        opacity: 0.9;
+    }
+  
     .nav1 {
         background-color: black;
         opacity: 0.7;
@@ -203,10 +204,16 @@
      
      }
     .menuPage {
-        height: 20vh;
+        height: 13vh;
+    }
+
+    .menuPage>h1{
+        font-size: 50px;
     }
 .checkOut {
     height: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
 .location {
