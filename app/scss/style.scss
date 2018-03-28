@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
 
+
+body {
+    background-color: antiquewhite;
+}
+
 .frontPage {
+
+    
+    
+    
     height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
-    border-bottom: 5px white solid;
+  
     background: url(Img/FrontPage.jpeg);
     background-size: cover;
     background-position: center center;
@@ -35,19 +44,16 @@
  justify-content: center;
  text-align: center;
  padding: 1px;
- 
  margin:auto;
 }
 
 
 
 .hero-content {
-
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 
@@ -91,9 +97,12 @@ h2.slogan {
 
 
 .briefHistory{
+    -webkit-clip-path: polygon(0% 99%, 100% 94%, 0% 20%, 50% 0%, 0% 19%);
+    clip-path: polygon(0% 99%, 100% 94%, 100% 0%, 100% 0%, 0% 0%);
    display:flex;
 
    flex-direction: row-reverse;
+   justify-content: center;
     height: 100vh;
     position: relative;
     
@@ -102,16 +111,13 @@ h2.slogan {
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    
-   
-    
-    
+    background-repeat: no-repeat; 
 }
+
 .line {
     display:flex;
     border: solid white;
-    height: 800px;
+    height: 700px;
     width:0px;
     order: 2;
     margin: 50px;
@@ -127,7 +133,7 @@ font-size: 1.5em;
 .textBox > p {
 
     opacity: 0.9;
-    justify-content: left;
+ 
     width: 30em;
 }
 
@@ -136,7 +142,7 @@ font-size: 1.5em;
 .textBox2 > p {
     color: white;
     opacity: 0.9;
-    justify-content: left;
+
     width: 30em;
 }
 .goodlist{
@@ -182,13 +188,8 @@ font-size: 1.5em;
 
 .dropdown-menu {
     background-color: black;
-    opacity: 0.7;
-}
-
-
-
-.dropdown-menu {
-background-color: transparent;
+    opacity: 0.9;
+    
 }
 
 
@@ -216,7 +217,7 @@ width: 40px;
     position: relative;
     text-align: center;
     width: 100%;
-    background: url(Img/img4.jpg);
+
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -235,7 +236,7 @@ position: relative;
 text-align: center;
 width: 100%;
 
-background-color: rgba(59, 6, 6, 0.788);
+
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -266,6 +267,8 @@ padding: 10px;
 
 .loctxt{
     padding-top: 3em;
+    display: flex;
+    flex-direction: column;
 }
 #locationPage * { 
     color: #ffffff;
@@ -274,5 +277,8 @@ padding: 10px;
 
  #briefHistory * { 
     color: #ffffff;
+    opacity: 0.9;
  }
+
+
 
