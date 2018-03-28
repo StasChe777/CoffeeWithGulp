@@ -10,11 +10,10 @@ body {
     position: relative;
     text-align: center;
     width: 100%;
-
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(2deg) saturate(1.9);
+    /*filter: hue-rotate(2deg) saturate(1.9);*/
 }
 .container {
     display:flex;
@@ -27,17 +26,14 @@ body {
     height: 100%;
     
 }
-.topName>p.name {
 
-}
 .empty {
     margin: 80px;
 }
 .lowerPart{
- display: flex;
- flex-direction: column;
- justify-content: center;
+margin-top: 70px;
  text-align: center;
+ align-content: center;
  padding: 1px;
  margin:auto;
 }
@@ -54,33 +50,28 @@ body {
 
 
 h2.slogan {
-    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-family: 'Chicle', cursive;
     font-size: 30px;
-    margin: 10px;
-    color: white;
+    margin: 35px;
+    color:brown;
 }
+
 .orderBtn{
     width: 300px;
+    height: 50px;
+    border: none; 
+    padding: 15px;
     align-self: center;
     background-color:transparent;
-    
-
 }
 
 
-.orderBtn>p {
-    
-    font-family: monaco, Consolas, "Lucida Console", monospace;
-    border: solid white;
-    color: white;
-    margin:5px;
-    padding: 2px;
-    font-size: 50px;
-}
 
 .orderLine>p {
-    color: white;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
+    color: brown;
+    font-family: 'Chicle', cursive;
+    font-size: 150%;
+    font-style: 5px bold;
 }
 
 .nav1 {
@@ -102,7 +93,6 @@ h2.slogan {
     position: relative;
     
     width: 100%;
-    
     background: url(Img/img1.jpg);
     background-size: cover;
     background-position: center center;
@@ -146,6 +136,16 @@ font-size: 1.5em;
     margin-top: 170px;
 }
 
+.coffeecup{
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+   margin: 10px;;
+   margin-left: 50px;
+   height: 280px;
+   width: 300px;;
+   filter: hue-rotate(180deg) saturate(1.5);
+}
+
 .aboutImg1 {
     position:absolute;
     display:none;
@@ -177,7 +177,20 @@ font-size: 1.5em;
     height: 250px;
     width: 250px;
     filter: hue-rotate(20deg) saturate(10);
+}
 
+.orderImg {
+position: relative;
+height: 80em;
+width: 80em;
+margin-left : 20em;
+text-align: center;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+height: 20em;
+width: auto;
+border: 8px dotted brown;
 }
 
 
