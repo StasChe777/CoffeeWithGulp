@@ -2,20 +2,15 @@
 
 
 body {
-    background-color: antiquewhite;
+    background: linear-gradient(to bottom left,rgb(248, 183, 4),rgb(139, 97, 5) ,#be6a03);
 }
 
 .frontPage {
-
-    
-    
-    
     height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
-  
-    background: url(Img/FrontPage.jpeg);
+
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -97,8 +92,8 @@ h2.slogan {
 
 
 .briefHistory{
-    -webkit-clip-path: polygon(0% 99%, 100% 94%, 0% 20%, 50% 0%, 0% 19%);
-    clip-path: polygon(0% 99%, 100% 94%, 100% 0%, 100% 0%, 0% 0%);
+    -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 12%, 100% 88%);
+    clip-path: polygon(0% 100%, 0% 0%, 100% 12%, 100% 88%);
    display:flex;
 
    flex-direction: row-reverse;
