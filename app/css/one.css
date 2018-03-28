@@ -156,7 +156,7 @@ h2.slogan {
   opacity: 0.9; }
 
 .textBox {
-  margin-top: 100px;
+  margin-top: 120px;
   font-size: 1.5em; }
 
 .textBox > p {
@@ -171,7 +171,7 @@ h2.slogan {
 .goodlist {
   color: white;
   opacity: 0.9;
-  margin-top: 170px; }
+  margin-top: 100px; }
 
 .coffeecup {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -264,8 +264,7 @@ h2.slogan {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  filter: hue-rotate(2deg) saturate(1.9); }
+  background-repeat: no-repeat; }
 
 table {
   background-color: white; }
@@ -303,7 +302,6 @@ table {
     text-align: center;
     width: 100%;
     margin: auto;
-    background: url(Img/FrontPage.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -377,7 +375,7 @@ table {
     border-radius: 5px;
     opacity: 0.9; }
   .textBox {
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 1.5em; }
   .textBox > p {
     opacity: 0.9;
@@ -391,7 +389,7 @@ table {
   .goodlist {
     color: white;
     opacity: 0.9;
-    margin-top: 170px; }
+    margin-top: 60px; }
   .aboutImg1 {
     display: none;
     position: absolute;
@@ -442,7 +440,6 @@ table {
     text-align: center;
     width: 100%;
     margin: auto;
-    background-color: brown;
     background-size: cover; }
   .container {
     display: flex;
@@ -452,45 +449,45 @@ table {
     margin: 0 auto;
     padding: 0 0px;
     height: 100%; }
-  .empty {
-    margin: 40px; }
-  .lowerPart {
+  .topName > p.name .lowerPart {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px; }
-  .hero-content {
+  .topName > p.name .hero-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center; }
+
   h2.slogan {
     font-family: 'Chicle', cursive;
+
     font-size: 20px;
     margin: 2px;
     color: white; }
-  .orderBtn {
+  .topName > p.name .orderBtn {
     width: 300px;
     align-self: center;
     background-color: transparent; }
-  .orderBtn > p {
+  .topName > p.name .orderBtn > p {
     font-family: monaco, Consolas, "Lucida Console", monospace;
     border: solid white;
     color: white;
     margin: 5px;
     padding: 2px;
     font-size: 30px; }
-  .orderLine > p {
+  .topName > p.name .orderLine > p {
     color: white;
     font-family: monaco, Consolas, "Lucida Console", monospace; }
-  .nav1 {
+  .topName > p.name .nav1 {
     background-color: black;
     opacity: 0.7;
     border: 50px 5px 0px 5px; }
-  .burg1 {
+  .topName > p.name .burg1 {
     color: white;
     font-size: 4rem; }
-  .briefHistory {
+  .topName > p.name .briefHistory {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -500,7 +497,7 @@ table {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
-  .line {
+  .topName > p.name .line {
     display: none;
     display: flex;
     border: solid white;
@@ -510,23 +507,23 @@ table {
     margin: 45px;
     border-radius: 5px;
     opacity: 0.9; }
-  .textBox {
-    margin-top: 20px;
+  .topName > p.name .textBox {
+    margin-top: 30px;
     font-size: 13px; }
-  .textBox > p {
+  .topName > p.name .textBox > p {
     opacity: 0.9;
     justify-content: left;
     width: 30em; }
-  .textBox2 > p {
+  .topName > p.name .textBox2 > p {
     color: white;
     opacity: 0.9;
     justify-content: left;
     width: 30em; }
-  .goodlist {
+  .topName > p.name .goodlist {
     color: white;
     opacity: 0.9;
-    margin-top: 17px; }
-  .aboutImg1 {
+    margin-top: 10px; }
+  .topName > p.name .aboutImg1 {
     display: none;
     position: absolute;
     top: 30px;
@@ -541,7 +538,7 @@ table {
     filter: hue-rotate(10deg) saturate(2);
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
-  .aboutImg2 {
+  .topName > p.name .aboutImg2 {
     position: absolute;
     display: none;
     top: 140px;
@@ -553,7 +550,7 @@ table {
     height: 50px;
     width: 50px;
     filter: hue-rotate(20deg) saturate(10); }
-  .locationPage {
+  .topName > p.name .locationPage {
     height: 400vh;
     position: relative;
     text-align: center;
@@ -562,10 +559,10 @@ table {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: hue-rotate(2deg) saturate(1.9); } }
+    filter: hue-rotate(2deg) saturate(1.9); }
+  /*Phone size Portrait Mode*/ }
 
-/*Phone size Portrait Mode*/
-@media only screen and (max-width: 415px) {
+@media only screen and (max-device-width: 823px) and (orientation: landscape) and (max-width: 415px) {
   #logo {
     font-size: 50px; }
   .frontPage {
@@ -640,16 +637,16 @@ table {
   .line {
     display: flex;
     border: solid white;
-    height: 500px;
+    height: 600px;
     width: 0px;
     order: 2;
-    margin: 30px;
+    margin-top: 70px;
     border-radius: 5px;
     opacity: 0.9; }
   .textBox {
     flex: display;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 100px;
     font-size: 14px; }
   h1 {
     font-size: 25px; }
@@ -695,8 +692,7 @@ table {
     background-color: #34495e;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    filter: hue-rotate(2deg) saturate(1.9); }
+    background-repeat: no-repeat; }
   .loctxt {
     padding-top: 3em; }
   #locationPage * {

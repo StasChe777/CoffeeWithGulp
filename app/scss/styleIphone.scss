@@ -15,7 +15,7 @@ and (max-device-width : 823px) and (orientation: landscape) {
         text-align: center;
         width: 100%;
         margin: auto;
-        background-color: brown;
+ 
         background-size: cover;
     }
     .container {
@@ -32,10 +32,8 @@ and (max-device-width : 823px) and (orientation: landscape) {
     .topName>p.name {
     
     
-    }
-    .empty {
-        margin: 40px;
-    }
+  
+
     .lowerPart{
      display: flex;
      flex-direction: column;
@@ -129,7 +127,7 @@ and (max-device-width : 823px) and (orientation: landscape) {
          opacity: 0.9;
      }
      .textBox{
-      margin-top: 20px;
+      margin-top: 30px;
       font-size: 13px;
      }
 
@@ -151,7 +149,7 @@ and (max-device-width : 823px) and (orientation: landscape) {
      .goodlist{
          color: white;
          opacity: 0.9;
-         margin-top: 17px;
+         margin-top: 10px;
      }
      
      .aboutImg1 {
@@ -332,17 +330,17 @@ and (max-device-width : 823px) and (orientation: landscape) {
      .line {
          display:flex;
          border: solid white;
-         height: 500px;
+         height: 600px;
          width:0px;
          order: 2;
-         margin: 30px;
+         margin-top: 70px;
          border-radius: 5px;
          opacity: 0.9;
      }
      .textBox{
          flex:display;
          justify-content: center;
-         margin-top: 20px;;
+         margin-top: 100px;;
     
         font-size: 14px;
     
@@ -413,7 +411,7 @@ and (max-device-width : 823px) and (orientation: landscape) {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        filter: hue-rotate(2deg) saturate(1.9);
+        
         }
 
         .loctxt{
@@ -427,4 +425,5 @@ and (max-device-width : 823px) and (orientation: landscape) {
          #briefHistory * { 
             color: #ffffff;
          }
+}
 }
